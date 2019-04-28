@@ -23,6 +23,7 @@ h1 {
                  2px 2px 3px #666,
                  3px 3px 5px #999;
 }
+
 p {
     line-height: 1.4;
     margin-bottom: .75em; /* 12px/16=.75 */
@@ -119,6 +120,57 @@ nav a:active {
 main {
 	clear: both;
 }
+aside {
+	width: 20%;
+	float: left;
+	background-color: blanchedalmond;
+}
+#gallery {
+	width: 80%;
+	float: left;
+}
+.galWrapper {
+       background-color:  #ededed; /* #eae1db; */
+       padding: .5em;
+       font-family: 'Roboto', sans-serif;
+       margin: 0;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap; /* nowrap*/
+}
+.galWrapper article {
+    padding: 10px 0;
+    flex-direction: column;
+	background-color: blanchedalmond;
+}
+.galWrapper article img {
+    border: solid 2px silver;
+}
+.galWrapper article h3 {
+    font-size: 1em;
+    color: dimgray;
+}
+
+.artBtn button {
+	background-color: burlywood;
+	margin: 5px;
+	padding: 3px;
+	min-width: 80px;
+	color: white;
+}
+.card {
+   width: 40%;
+   height: 50%;
+   color: #fff;
+   font-size: 1em;
+   margin: .5em auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: solid 5px silver;
+  /* background-color:  #00ad81;*//**/
+}
 footer {
 	clear: both;
 	background-color: darkseagreen;
@@ -154,10 +206,16 @@ footer a {
 		align-items: center;
 		justify-content: space-around;
 		margin: 5% 0;
-
 	}
-
 	#myPhoto {
 		width: 10%;
+	}
+
+	.card {
+		   width: 30%;
+		   height: 40%;
+	}
+	 #gallery #tabs li a {
+		   padding: 10px 20px;
 	}
 }
