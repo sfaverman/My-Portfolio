@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section, article, main, aside, footer, nav, video, audio, header, figure, picture {
+    display: block;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+h1 {
+	text-align: center;
+    font-size: 3.5em;
+	letter-spacing: 0.1em;
+	color: dimgray;
+    /*color: #fff9d6;*/
+	/* text-shadow: horiz. offset, vert. offset, blure, color */
+    text-shadow: 1px 1px 2px #fff,
+                 2px 2px 3px #666,
+                 3px 3px 5px #999;
+}
+p {
+    line-height: 1.4;
+    margin-bottom: .75em; /* 12px/16=.75 */
+}
+#myPhoto {
+	float: left;
+	width: 15%;
+	height: auto;
+	border: solid 5px blanchedalmond;
+	margin: 2%;
+}
+header {
+	height: 120px;
+	background-color: darkseagreen;
+	margin: 2%;
+	position: relative;
+}
+
+/* Navigation - Hamburger menu for mobile */
+
+nav.mainNav {
+    background-color: rgba(143,188,143,.7); /*darkseagreen; */
+}
+
+.mainNav ul {
+    list-style-type: none;
+}
+/*mainNav li {
+    border-bottom: solid 2px blanchedalmond;
+}*/
+.mainNav li a {
+    display: block;
+    padding: .5em;
+}
+#navigation nav {
+    height: 0;
+    overflow: hidden;
+}
+   /* fixing problems on some browsers - tricking */
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+@-webkit-keyframes bugfix {
+    from { padding: 0;}
+    to { padding: 0;}
+}
+#navigation input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    left: -999em;  /* hide checkbox out of screen */
+}
+#navigation label {
+    display: block;
+    background: url("../images/nav-icon.png") no-repeat right center;
+    position: relative;
+    top: 20px;
+    right: 40px;
+    text-indent: -999em;
+    cursor: pointer;
+    user-select: none;
+	font-size: 5em;
+}
+#navigation input[type=checkbox]:checked ~ nav {
+    height: auto;
+    overflow: hidden;
+}
+/* End of Navigation */
+nav {
+	float: right;
+	width: 100%;
+}
+nav a:link {
+    color: white;
+    text-decoration: none;
+	font-size: 1.4em;
+    font-weight: bold;
+    padding: 4px 8px;
+    display: block;
+    border: solid 1px blanchedalmond;
+}
+nav a:visited {
+    color: white;
+    border: solid 1px blanchedalmond;
+}
+nav a:hover {
+    background-color: rgba(222,184,135,.8); /*burlywood;*/
+    color: lightgoldenrodyellow;
+    border: solid 1px white;
+}
+nav a:active {
+    color: darkseagreen;
+	background-color: lightgoldenrodyellow;
+}
+main {
+	clear: both;
+}
+footer {
+	clear: both;
+	background-color: darkseagreen;
+	text-align: center;
+	padding: 2%;
+	margin: 2%;
+	color: white;
+}
+footer a {
+	color: white;
+}
+@media screen and (min-width: 730px) {
+	#navigation label {
+        display: none;
+    }
+	#navigation nav {
+        height: auto;
+        overflow: visible;
+    }
+	#navigation li {
+        display: inline-block;
+        border: none;
+    }
+	nav {
+		float: right;
+		width: 85%;
+	}
+	nav.mainNav {
+    	background-color: darkseagreen;
+}
+	nav.mainNav ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin: 5% 0;
+
+	}
+
+	#myPhoto {
+		width: 10%;
+	}
+}
