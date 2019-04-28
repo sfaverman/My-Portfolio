@@ -41,8 +41,9 @@ p {
 /*	border-radius: 50%;*/
 }
 header {
-	height: 120px;
-	background-color: darkseagreen;
+	height: 100px;
+	/* background-color: darkseagreen; */
+	background-image: linear-gradient(to bottom, darkseagreen, blanchedalmond);
 	margin: 2%;
 	position: relative;
 }
@@ -132,8 +133,8 @@ main {
 button.callOut {
 	display: left;
 	/*width: 20%;*/
-	background-color: darkseagreen;
-	color: lightgoldenrodyellow;
+	background-color: rgba(143,188,143,.9); /* darkseagreen; */
+  	color: lightgoldenrodyellow;
 	font-size: 1.4em;
 	margin-left: 4%;
 	padding: 3px 5px;
@@ -203,8 +204,7 @@ a.gitHub img {
 	border: none;
 	position: relative;
 	top: 10px;
-	background-color: darkseagreen;
-	float: right;
+	background-color: rgba(222,184,135,.8); /* burlywood; */	float: right;
 	margin-right: 2%;
 	margin-bottom: 1%;
 }
@@ -229,7 +229,7 @@ a.gitHub img {
 }
 footer {
 	clear: both;
-	background-color: darkseagreen;
+	background-color: rgba(143,188,143,.9); /*darkseagreen; */
 	text-align: center;
 	padding: 2%;
 	margin: 2%;
@@ -264,7 +264,7 @@ footer a {
     }
 	nav {
 		float: right;
-		width: 87%;
+		width: 88%;
 	}
 	nav.mainNav {
     	background-color: darkseagreen;
@@ -273,8 +273,9 @@ footer a {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		margin: 5% 0;
+		margin: 0;
 	}
+
 	#myPhoto {
 		width: 10%;
 	}
