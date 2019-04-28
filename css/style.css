@@ -12,9 +12,9 @@ img {
 	height: auto;
 }
 
-h1 {
+h1, h2 {
 	text-align: center;
-    font-size: 3.5em;
+    font-size: 3.6em;
 	letter-spacing: 0.1em;
 	color: dimgray;
     /*color: #fff9d6;*/
@@ -23,9 +23,13 @@ h1 {
                  2px 2px 3px #666,
                  3px 3px 5px #999;
 }
+h2 {
+	font-size: 2.8em;
+}
 
 p {
     line-height: 1.4;
+	color: dimgray;
     margin-bottom: .75em; /* 12px/16=.75 */
 }
 #myPhoto {
@@ -33,7 +37,8 @@ p {
 	width: 15%;
 	height: auto;
 	border: solid 5px blanchedalmond;
-	margin: 2%;
+	margin: 1.5% 0 0 1.5%;
+/*	border-radius: 50%;*/
 }
 header {
 	height: 120px;
@@ -46,6 +51,7 @@ header {
 
 nav.mainNav {
     background-color: rgba(143,188,143,.7); /*darkseagreen; */
+	margin-top: 3.5%;
 }
 
 .mainNav ul {
@@ -57,6 +63,9 @@ nav.mainNav {
 .mainNav li a {
     display: block;
     padding: .5em;
+}
+.mainNav li a i {
+	color: dimgray;
 }
 #navigation nav {
     height: 0;
@@ -120,6 +129,25 @@ nav a:active {
 main {
 	clear: both;
 }
+button.callOut {
+	display: left;
+	/*width: 20%;*/
+	background-color: darkseagreen;
+	color: lightgoldenrodyellow;
+	font-size: 1.4em;
+	margin-left: 4%;
+	padding: 3px 5px;
+}
+.blinking{
+    animation:blinkingText 2.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: lightgoldenrodyellow;    }
+    49%{    color: transparent; }
+    50%{    color: lightgoldenrodyellow; }
+    99%{    color:transparent;  }
+    100%{   color: lightgoldenrodyellow;    }
+}
 aside {
 	width: 20%;
 	float: left;
@@ -133,7 +161,7 @@ aside {
        background-color:  #ededed; /* #eae1db; */
        padding: .5em;
        font-family: 'Roboto', sans-serif;
-       margin: 0;
+       margin: 2% 0 0 0;
        display: flex;
        justify-content: space-between;
        flex-wrap: wrap; /* nowrap*/
@@ -144,20 +172,43 @@ aside {
 	background-color: blanchedalmond;
 }
 .galWrapper article img {
-    border: solid 2px silver;
+    border: solid 2px white;
 }
 .galWrapper article h3 {
     font-size: 1em;
     color: dimgray;
+	margin-bottom: 0.5em;
 }
-
-.artBtn button {
+button {
 	background-color: burlywood;
 	margin: 5px;
 	padding: 3px;
 	min-width: 80px;
 	color: white;
 }
+.artBtn button {
+	background-color: burlywood;
+	margin: 5px;
+	padding: 2px;
+	min-width: 70px;
+	color: white;
+
+}
+/*.artBtn a.gitHub {
+	position: relative;
+}*/
+a.gitHub img {
+	width: 7%;
+	height: auto;
+	border: none;
+	position: relative;
+	top: 10px;
+	background-color: darkseagreen;
+	float: right;
+	margin-right: 2%;
+	margin-bottom: 1%;
+}
+
 .card {
    width: 40%;
    height: 50%;
@@ -168,8 +219,13 @@ aside {
    align-items: center;
    justify-content: center;
 
-   border: solid 5px silver;
+   border: solid 5px darkseagreen; /*silver;*/
   /* background-color:  #00ad81;*//**/
+}
+.card img.snap {
+	width: 90%;
+	height: auto;
+	/* height: 300px; - resize images to be same size */
 }
 footer {
 	clear: both;
@@ -182,6 +238,18 @@ footer {
 footer a {
 	color: white;
 }
+.social a {
+	width: 10px;
+	height: 10px;
+	color: black;
+	background-color: antiquewhite;
+}
+.clearIt {
+	clear: both;
+}
+@media screen and (min-width: 450px) {
+}
+
 @media screen and (min-width: 730px) {
 	#navigation label {
         display: none;
@@ -196,7 +264,7 @@ footer a {
     }
 	nav {
 		float: right;
-		width: 85%;
+		width: 87%;
 	}
 	nav.mainNav {
     	background-color: darkseagreen;
@@ -210,12 +278,19 @@ footer a {
 	#myPhoto {
 		width: 10%;
 	}
+	button.callOut {
+		font-size: 2.0em;
+	}
 
 	.card {
 		   width: 30%;
 		   height: 40%;
 	}
-	 #gallery #tabs li a {
-		   padding: 10px 20px;
+	.artBtn button {
+		padding: 3px;
+		min-width: 80px;
+	}
+	a.gitHub img {
+	width: 5%;
 	}
 }

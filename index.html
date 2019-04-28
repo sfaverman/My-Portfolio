@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Portfolio</title>
+	<!-- Fonts -->
+	<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
 	<div>
-		<img id="myPhoto" src="images/sofia2.JPG" alt="my photo">
+		<img id="myPhoto" src="images/sofia2.JPG" alt="my photo" title="Sofia Faverman">
 	</div>
 	<!-- HAMBURGER MENU -->
     <div id="navigation">
@@ -17,61 +20,66 @@
          <label for="toggle">Menu</label>
          <nav class="mainNav">
             <ul>
-                <li><a href="#">Home</a></li>
-			     <li><a href="#">Portfolio</a></li>
-			     <li><a href="#">About Me</a></li>
-			     <li><a href="#">Resume</a></li>
-			     <li><a href="#">Cover Letter</a></li>
+                <li><a href="#"><i class="icon ion-md-home"></i> Home</a></li>
+			     <li><a href="#"><i class="icon ion-md-images"></i> Portfolio</a></li>
+				<li><a href="#"><i class="icon ion-md-person"></i> About Me</a></li>
+				<li><a href="#"><i class="icon ion-md-book"></i> Resume</a></li>
+				<li><a href="#"><i class="icon ion-md-contact"></i> Contact</a></li>
             </ul>
          </nav>
      </div>
 </header>
 
 <main>
-	<h1>My Portfolio</h1>
-	<!--<aside>
+	<h1>Sofia Faverman</h1>
+	<h2>My Portfolio</h2>
+	<button class="callOut blinking">Hire Me!</button>
+	<a class="gitHub"><img src="images/logo-github.svg" alt="github icon" title="My GitHub account"></a>
+		<!--<aside>
 		<h2>About me</h2>
 	</aside>-->
-	<section class="galWrapper">
+
+	<section class="galWrapper clearIt">
 
 		<article class="card">
 			<h3>Project 1</h3>
-			<img src="images/rrp1.png" alt="Royal Ridge home page">
+			<img class="snap" src="images/rrp1.png" alt="Royal Ridge home page">
 			<div class="artBtn">
-				<button>Lunch</button>
-				<button>Source</button>
+				<button><i class="icon ion-md-navigate"></i> Lunch</button>
+				<button><i class="icon ion-md-code"></i> Source</button>
 			</div>
 		</article>
 		<article class="card">
 			<h3>Project 2</h3>
-			<img src="images/rrp2.png" alt="Royal Ridge boarding page">
+			<img class="snap" src="images/rrp2.png" alt="Royal Ridge boarding page">
 			<div class="artBtn">
-				<button>Lunch</button>
-				<button>Source</button>
+				<button><i class="icon ion-md-navigate"></i> Lunch</button>
+				<button><i class="icon ion-md-code"></i> About</button>
+
 			</div>
 		</article>
 		<article class="card">
 			<h3>Project 3</h3>
-			<img src="images/sbkc1.png" alt="SBKC home page">
+			<img class="snap" src="images/sbkc1.png" alt="SBKC home page">
 			<div class="artBtn">
-				<button>Lunch</button>
-			 	<button>Source</button>
+				<button><i class="icon ion-md-navigate"></i> Lunch</button>
+				<button><i class="icon ion-md-code"></i> Source</button>
 			</div>
 		</article>
 		<article class="card">
 			<h3>Project 4</h3>
-			<img src="images/sbkc2.png" alt="SBKC gallery page">
+			<img class="snap" src="images/sbkc2.png" alt="SBKC gallery page">
 			<div class="artBtn">
-				<button>Lunch</button>
-				<button>Source</button>
+				<button><i class="icon ion-md-navigate"></i>Lunch</button>
+				<button><i class="icon ion-md-code"></i>Source</button>
 			</div>
 		</article>
 		<article class="card">
 			<h3>Project 5</h3>
-			<img src="images/sbkc3.png" alt="SBKC video page">
+			<img class="snap" src="images/sbkc3.png" alt="SBKC video page">
 			<div class="artBtn">
-				<button>Lunch</button>
-				<button>Source</button>
+				<button><i class="icon ion-md-navigate"></i>Lunch</button>
+				<button><i class="icon ion-md-code"></i>Source</button>
 			</div>
 		</article>
 	</section>
@@ -79,12 +87,13 @@
 </main>
 
 <footer>
+
 	<p>Copyright &copy; 2019</p>
 	<a href="#">Home</a> -
 	<a href="#">Portfolio</a> -
 	<a href="#">About Me</a> -
 	<a href="#">Resume</a> -
-	<a href="#">Cover Letter</a>
+	<a href="#">Contact</a>
 </footer>
 
 </body>
