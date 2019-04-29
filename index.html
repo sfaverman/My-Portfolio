@@ -8,6 +8,40 @@
 	<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script>
+        $(function(){
+			setTimeout(function() {
+				$('.first').fadeIn(500);
+			}, 1000);
+			setTimeout(function() {
+				$('.second').fadeIn(500);
+			}, 2000);
+			setTimeout(function() {
+				$('.third').fadeIn(500);
+			}, 3000);
+			setTimeout(function() {
+				$('.forth').fadeIn(500);
+			}, 5000);
+			setTimeout(function() {
+				$('.fifth').fadeIn(500);
+			}, 6000);
+
+		})
+				/*$('h1.speedy').hide();
+                $('h2.regular').hide();
+                $('h2.slow').hide();
+                $('p.slow').hide();
+                $('h2.snail').hide();
+                $('h1.speedy').delay('fast').show();*/
+               /* $('h2.regular').delay('4000').show();
+                $('h2.slow').delay('3000').show();
+                $('p.slow').delay('2000').show();*/
+               /* $('h2.snail').delay('10000').show();*/
+
+
+       /* })*/ // end doc ready
+    </script>
 </head>
 <body>
 <header>
@@ -20,8 +54,8 @@
          <label for="toggle">Menu</label>
          <nav class="mainNav">
             <ul>
-                <li><a href="#"><i class="icon ion-md-home"></i> Home</a></li>
-				<li><a href="#"><i class="icon ion-md-images"></i> Portfolio</a></li>
+                <li><a href="index.html" class="active"><i class="icon ion-md-home"></i> Home</a></li>
+				<li><a href="pages/portfolio.html"><i class="icon ion-md-images"></i> Portfolio</a></li>
 				<li><a href="#"><i class="icon ion-md-person"></i> About Me</a></li>
 				<li><a href="#"><i class="icon ion-md-book"></i> Resume</a></li>
 				<li><a href="#"><i class="icon ion-md-contact"></i> Contact</a></li>
@@ -30,66 +64,24 @@
      </div>
 </header>
 
-<main>
-	<h1>Sofia Faverman</h1>
-	<h2>My Portfolio</h2>
-	<button class="callOut blinking">Hire Me!</button>
-	<a class="gitHub"><img src="images/logo-github.svg" alt="github icon" title="My GitHub account"></a>
-		<!--<aside>
-		<h2>About me</h2>
-	</aside>-->
+<main id="home">
+	<section class="clearIt">
 
-	<section class="galWrapper clearIt">
+		<h1 class="first hmAnim">Hello,</h1>
+		<h2 class="second hmAnim">My Name is</h2>
+		<h2 class="third hmAnim">Sofia Faverman</h2>
+		<h2 class="forth hmAnim">I am a Front Web Developer</h2>
+		<p class="fifth hmAnim">
+			<button class="callOut">More About Me!</button>
+			<button class="callOut">View My Portfolio!</button>
+		</p>
+		<h2 class="six hmAnim">Link to My GitHub Account: <a class="gitHub"><img src="images/logo-github.svg" alt="github icon" title="My GitHub account"></a></h2>
 
-		<article class="card">
-			<h3>Royal Ridge Equine Ctr</h3>
-			<img class="snap" src="images/rrp1.png" alt="Royal Ridge home page">
-			<div class="artBtn">
-				<button><i class="icon ion-md-navigate"></i> Lunch</button>
-				<button><i class="icon ion-md-code"></i> Source</button>
-			</div>
-		</article>
-		<article class="card">
-			<h3>Royal Ridge Equine Ctr</h3>
-			<img class="snap" src="images/rrp2.png" alt="Royal Ridge boarding page">
-			<div class="artBtn">
-				<button><i class="icon ion-md-navigate"></i> Lunch</button>
-				<button><i class="icon ion-md-code"></i> About</button>
 
-			</div>
-		</article>
-		<article class="card">
-			<h3>Silver Bay Kennel Club</h3>
-			<img class="snap" src="images/sbkc1.png" alt="SBKC home page">
-			<div class="artBtn">
-				<button><i class="icon ion-md-navigate"></i> Lunch</button>
-				<button><i class="icon ion-md-code"></i> Source</button>
-			</div>
-		</article>
-		<article class="card">
-			<h3>Silver Bay Kennel Club</h3>
-			<img class="snap" src="images/sbkc2.png" alt="SBKC gallery page">
-			<div class="artBtn">
-				<button><i class="icon ion-md-navigate"></i> Lunch</button>
-				<button><i class="icon ion-md-code"></i> Source</button>
-			</div>
-		</article>
-		<article class="card">
-			<h3>Mortgage Calculator</h3>
-			<img class="snap" src="images/mc_at.PNG" alt="mortgage calculator amortization schedule">
-			<div class="artBtn">
-				<button><i class="icon ion-md-navigate"></i> Lunch</button>
-				<button><i class="icon ion-md-code"></i> Source</button>
-			</div>
-		</article>
-		<article class="card">
-			<h3>My Portfolio</h3>
-			<img class="snap" src="images/myPortfolio.png" alt="my Portfolio page">
-			<div class="artBtn">
-				<button><i class="icon ion-md-navigate"></i> Lunch</button>
-				<button><i class="icon ion-md-code"></i> Source</button>
-			</div>
-		</article>
+
+
+
+
 	</section>
 
 </main>
