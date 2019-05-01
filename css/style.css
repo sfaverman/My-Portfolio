@@ -8,6 +8,18 @@ section, article, main, aside, footer, nav, video, audio, header, figure, pictur
     display: block;
 }
 
+body {
+    background: url(../images/apartment-apple-chair-245032.jpg) no-repeat center center; /*fixed right bottom;*/
+
+    background-size: cover;
+}
+#container {
+     background-color: rgba(255,255,255,.4);
+}
+article.resume {
+     background-color: rgba(255,255,255,.85);
+     border: solid 1px #333;
+}
 img {
 	width: 100%;
 	height: auto;
