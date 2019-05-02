@@ -1,4 +1,9 @@
-/* #8F00FF - blue violet */
+/* #c96b5f -rgba(201, 107, 95, .8); - cup orange/burgundy - replace burlywood */
+/* #ffe3bd - dark lemon  - replace blanchealmond ??? */
+/* #7b8f86 - green leaf - replace darkseagreen */
+/* #e7e3d4; - nice greish */
+/* #5a636b; - dark grey */
+/* #f5e6cc; - almond like */
 * {
     padding: 0;
     margin: 0;
@@ -29,15 +34,20 @@ h1, h2 {
 	text-align: center;
     font-size: 3.6em;
 	letter-spacing: 0.1em;
-	color: dimgray;
+	color: #c96b5f; /* burgundy */
     /*color: #fff9d6;*/
 	/* text-shadow: horiz. offset, vert. offset, blure, color */
     text-shadow: 1px 1px 2px #fff,
                  2px 2px 3px #666,
                  3px 3px 5px #999;
+	background-color: rgba(255,255,255, 0.85);
+	width: 60%;
+	margin: auto;
 }
 h2 {
 	font-size: 2.8em;
+	color: #e7e3d4;
+	background-color: rgba(255,255,255, 0.85);
 }
 
 p {
@@ -53,14 +63,14 @@ a {
 	float: left;
 	width: 15%;
 	height: auto;
-	border: solid 5px blanchedalmond;
+	border: solid 5px #c96b5f; /* med burgundy */
 	margin: 1.5% 0 0 1.5%;
 /*	border-radius: 50%;*/
 }
 header {
 	height: 100px;
-	/* background-color: darkseagreen; */
-	background-image: linear-gradient(to bottom, darkseagreen, blanchedalmond);
+	 background-color: #5a636b; /* dark grey */
+	/* background-image: linear-gradient(to bottom, darkseagreen, #ffe3bd /*blanchedalmond*/); */
 	margin: 2%;
 	position: relative;
 }
@@ -136,7 +146,7 @@ nav a:visited {
     border: solid 1px blanchedalmond;
 }
 nav a:hover {
-    background-color: rgba(222,184,135,.8); /*burlywood;*/
+    background-color: rgba(201, 107, 95, .8); /* rgba(222,184,135,.8); burlywood;*/
     color: lightgoldenrodyellow;
     border: solid 1px white;
 }
@@ -195,7 +205,7 @@ button.callOut {
 .galWrapper article {
     padding: 10px 0;
     flex-direction: column;
-	background-color: blanchedalmond;
+	background-color: floralwhite; /* #e58241; /*#ffe3bd; /* blanchedalmond; */
 }
 .galWrapper article img {
     border: solid 2px white;
@@ -206,14 +216,14 @@ button.callOut {
 	margin-bottom: 0.5em;
 }
 button {
-	background-color: burlywood;
+	background-color: #c96b5f; /* burlywood -> cup orange */
 	margin: 5px;
 	padding: 3px;
 	min-width: 80px;
 	color: white;
 }
 .artBtn button {
-	background-color: burlywood;
+	background-color: #c96b5f; /* burlywood -> cup orange */
 	margin: 5px;
 	padding: 2px;
 	min-width: 70px;
@@ -229,7 +239,7 @@ a.gitHub img {
 	border: none;
 	position: relative;
 	top: 10px;
-	background-color: rgba(222,184,135,.8); /* burlywood; */
+	background-color: rgba(201, 107, 95, .8);  /* rgba(222,184,135,.8) - burlywood; */
 	float: right;
 	margin-right: 2%;
 	margin-bottom: 1%;
@@ -245,7 +255,7 @@ a.gitHub img {
    align-items: center;
    justify-content: center;
 
-   border: solid 5px darkseagreen; /*silver;*/
+   border: solid 5px #7b8f86; /*darkseagreen; /*silver;*/
   /* background-color:  #00ad81;*//**/
 }
 .card img.snap {
@@ -258,11 +268,15 @@ hr {
 }
 footer {
 	clear: both;
-	background-color: rgba(143,188,143,.9); /*darkseagreen; */
+	background-color: #7b8f86; rgba(143,188,143,.9); /*darkseagreen; */
 	text-align: center;
 	padding: 2%;
 	margin: 2%;
 	color: white;
+/*	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;*/
 }
 footer a {
 	color: white;
@@ -281,7 +295,8 @@ footer a {
 	display: none;
 }
 .hmAnim button.callOut {
-	background-color: rgba(222,184,135,.8); /* burlywood; */ /*rgba(143,188,143,.9); /* darkseagreen; */
+	background-color: #c96b5f; /* orange/burgundy */
+	/*rgba(143,188,143,.9); /* darkseagreen; */
   	color: lightgoldenrodyellow;
 	min-width: 30%;
 	text-align: center;
@@ -292,16 +307,26 @@ footer a {
 /* RESUME PAGE */
 #resWrap header {
 	background-image: none;
-	border: solid 1px darkseagreen;
+	border: solid 1px #7b8f86;/ /*dark green */
 	padding: 0;
+	margin-bottom: 10px;
 }
 
 #resWrap h1,h2,h3 {
 	text-align: center;
-	color: dimgray;
+	color: #7b8f86; /* grean leaf;*/
 }
-#resWrap h1 { font-size: 2.4rem; /*color: rgba(139,69,19,0.7); saddlebrown; */}
-#resWrap h2 { font-size: 2.0rem; color: darkseagreen; }
+
+#resWrap h1 {
+	font-size: 2.4rem;
+	color:#e7e3d4; /* nice grey */
+	background: none;
+}
+#resWrap h2 {
+	font-size: 2.0rem;
+	color: #da7a6e;
+	background: none;
+}
 #resWrap h3 {
 	font-size: 1.3rem;
 	margin-bottom: 10px;
@@ -314,17 +339,17 @@ footer a {
 	float: left;
 	margin: -45px 2% 0;
 	padding: 45px 2% 0;
-	background-color: blanchedalmond;
+	background-color: rgba(245, 230, 204, .9); /* #f5e6cc; almond */
 }
 #resWrap article {
 	width: 68%;
 	float: left;
-	//background-color: aqua;
+	/*background-color: aqua;*/
 	margin: -45px 0 0 0;
 	padding: 0 2%;
 }
 #resWrap article h3 {
-	background-color: blanchedalmond;
+	background-color: #f5e6cc; /* almond */
 	padding: 1%;
 
 }
