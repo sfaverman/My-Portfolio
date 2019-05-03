@@ -353,6 +353,24 @@ footer a {
 	padding: 1%;
 
 }
+#resWrap section {
+	margin-left: 1.5%;
+}
+#resWrap .col3 {
+	width: 31%;
+	float: left;
+	margin: 0 1% 2% 1%;
+	/*border-right: solid 10px #fff;*/
+	padding: 2%;
+	background-color:  #e7e3d4; //rgba(255,255,255,.9);
+}
+#resWrap .col3 ul {
+	list-style-type: none;
+
+}
+#resWrap .col3 ul li {
+	margin-bottom: 0.2em;
+}
 aside ul {
 	 list-style-type: none;
 }
