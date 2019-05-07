@@ -131,6 +131,7 @@ body {
 nav {
 	float: right;
 	width: 100%;
+	background-color:  #5a636b;
 }
 nav a:link {
     color: white;
@@ -172,7 +173,7 @@ main {
 button.callOut {
 	display: left;
 	/*width: 20%;*/
-	background-color: rgba(143,188,143,.9); /* darkseagreen; */
+	background-color: #7b8f86; /* rgba(143,188,143,.9); */ /* darkseagreen; */
   	color: lightgoldenrodyellow;
 	font-size: 1.4em;
 	margin-left: 4%;
@@ -282,6 +283,13 @@ footer {
 footer a {
 	color: white;
 }
+footer a.active {
+	color: #ffe3bd; /* #c96b5f; */
+}
+footer a:hover {
+	color: #da7a6e;
+}
+
 .social a {
 	width: 10px;
 	height: 10px;
@@ -347,7 +355,10 @@ h2.hmAnim {
 	padding: 45px 2% 0;
 	border: solid 3px #7b8f86;
 	background-color:  floralwhite;
-
+	font-size: 1.1em;
+}
+#resWrap aside ul li {
+	margin-bottom: 0.5em;
 }
 #resWrap article {
 	width: 68%;
