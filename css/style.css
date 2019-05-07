@@ -63,7 +63,7 @@ a {
 	float: left;
 	width: 15%;
 	height: auto;
-	border: solid 5px #c96b5f; /* med burgundy */
+	border: solid 5px #e7e3d4; /*#c96b5f; /* med burgundy */
 	margin: 1.5% 0 0 1.5%;
 /*	border-radius: 50%;*/
 }
@@ -78,7 +78,7 @@ header {
 /* Navigation - Hamburger menu for mobile */
 
 nav.mainNav {
-    background-color: rgba(143,188,143,.7); /*darkseagreen; */
+   /* background-color: rgba(143,188,143,.7);*/ /*darkseagreen; */
 	margin-top: 3.5%;
 }
 
@@ -93,7 +93,7 @@ nav.mainNav {
     padding: .5em;
 }
 .mainNav li a i {
-	color: dimgray;
+	color: white; /* dimgray; */
 }
 #navigation nav {
     height: 0;
@@ -151,14 +151,19 @@ nav a:hover {
     border: solid 1px white;
 }
 nav a:active {
-    color: darkseagreen;
+    color: #7b8f86;
 	background-color: lightgoldenrodyellow;
-
+}
+nav a:active i {
+	color: #7b8f86;
 }
 nav a.active {
 	color: dimgray;
-	background-color: blanchedalmond;
+	background-color: floralwhite;
 	border: solid 1px lightgoldenrodyellow;
+}
+nav a.active i {
+	color: dimgray;
 }
 
 main {
@@ -196,7 +201,7 @@ button.callOut {
 .galWrapper {
        background-color:  #ededed; /* #eae1db; */
        padding: .5em;
-       font-family: 'Roboto', sans-serif;
+       font-family: 'Roboto', sans-serif;  /* ??????? */
        margin: 2% 0 0 0;
        display: flex;
        justify-content: space-between;
@@ -268,15 +273,11 @@ hr {
 }
 footer {
 	clear: both;
-	background-color: #7b8f86; rgba(143,188,143,.9); /*darkseagreen; */
+	background-color: #7b8f86; /* rgba(143,188,143,.9);*/ /*darkseagreen; */
 	text-align: center;
 	padding: 2%;
 	margin: 2%;
-	color: white;
-/*	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;*/
+	color: #fff;
 }
 footer a {
 	color: white;
@@ -304,18 +305,21 @@ footer a {
 	padding: 3px 5px;
 	margin: 2% 8%;
 }
+h2.hmAnim {
+	color: #7b8f86;
+}
 /* RESUME PAGE */
 #resWrap header {
-	background-image: none;
-	border: solid 1px #7b8f86;/ /*dark green */
+	background: none;
+	/*border: solid 1px #7b8f86;*// /*dark green */
 	padding: 0;
 	margin-bottom: 10px;
 }
 
-#resWrap h1,h2,h3 {
+/*#resWrap h1,h2,h3 {
 	text-align: center;
-	color: #7b8f86; /* grean leaf;*/
-}
+	color:  #FEE8D6;  desert sand , #7b8f86 - grean leaf;
+}*/
 
 #resWrap h1 {
 	font-size: 2.4rem;
@@ -330,6 +334,8 @@ footer a {
 #resWrap h3 {
 	font-size: 1.3rem;
 	margin-bottom: 10px;
+	text-align: center;
+	color: floralwhite;
 	text-transform: uppercase;
 }
 
@@ -339,19 +345,23 @@ footer a {
 	float: left;
 	margin: -45px 2% 0;
 	padding: 45px 2% 0;
-	background-color: rgba(245, 230, 204, .9); /* #f5e6cc; almond */
+	border: solid 3px #7b8f86;
+	background-color:  floralwhite;
+
 }
 #resWrap article {
 	width: 68%;
 	float: left;
-	/*background-color: aqua;*/
+	background-color: rgba(255,255,255,.9);
 	margin: -45px 0 0 0;
 	padding: 0 2%;
+    border: solid 3px  #7b8f86; /* #da7a6e; */
 }
-#resWrap article h3 {
-	background-color: #f5e6cc; /* almond */
-	padding: 1%;
 
+#resWrap article h3 {
+	background-color: #7b8f86; /*#FEE8D6; /* wheat; /*#f5e6cc; /* almond */
+	border-radius: 25px;
+	padding: .5%;
 }
 #resWrap section {
 	margin-left: 1.5%;
@@ -360,9 +370,9 @@ footer a {
 	width: 31%;
 	float: left;
 	margin: 0 1% 2% 1%;
-	/*border-right: solid 10px #fff;*/
+	/*border: solid 3px #da7a6e;*/
 	padding: 2%;
-	background-color:  #e7e3d4; //rgba(255,255,255,.9);
+	background-color: floralwhite; /* #e7e3d4; /*rgba(255,255,255,.9); */
 }
 #resWrap .col3 ul {
 	list-style-type: none;
@@ -371,12 +381,35 @@ footer a {
 #resWrap .col3 ul li {
 	margin-bottom: 0.2em;
 }
+#skills ul li:before {
+   content: url('../images/bullet.gif');
+   margin-right: 10%;
+}
 aside ul {
 	 list-style-type: none;
 }
 aside img {
 	width: 15%;
 	height: auto;
+	/*margin: auto;
+	padding: 0;*/
+}
+#resWrap aside h3 {
+	color:  #7b8f86;
+	margin: 10px 0;
+}
+
+#samples img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 5%;
+	border: solid 3px  #e7e3d4; /*#5a636b; */ /*#da7a6e; */
+}
+#samples button {
+	width: 50%;
+	/*text-align: center;*/
+	margin: 0 25% 5% 25%;
+	float: none;
 }
 .resBtnGrp {
 	text-align: center;
@@ -388,6 +421,23 @@ aside img {
 .resBtnGrp button i {
 	margin: 0 3px;
 }
+#training ul, #work ul {
+	list-style-type: none;
+}
+
+#training ul img, #work ul img {
+	width: 2%;
+	height: auto;
+	margin-right: 1%;
+}
+#training ul li, #work ul li {
+	margin-bottom: 2%;
+	margin-left: 5%;
+}
+/*#training ul li:before, #work ul li:before {
+   content: url('../images/bullet.gif');
+   margin-right: 10%;
+}*/
 
 /* Media Quiery */
 
@@ -411,7 +461,7 @@ aside img {
 		width: 88%;
 	}
 	nav.mainNav {
-    	background-color: darkseagreen;
+    /*	background-color: darkseagreen;*/
 }
 	nav.mainNav ul {
 		display: flex;
