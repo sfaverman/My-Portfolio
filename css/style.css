@@ -49,6 +49,32 @@ h2 {
 	color: #e7e3d4;
 	background-color: rgba(255,255,255, 0.85);
 }
+h2.colorBurg {
+	color: #c96b5f;
+}
+
+h2.colorGr {
+	color: #7b8f86;
+}
+/*#contact h1, #contact h2:first-of-type {
+	margin-bottom: 0.5em;
+}*/
+#contact h2 {
+	font-size: 2.4em;
+	padding: 0 0.3em 0.5em;
+}
+
+#contact h2:last-of-type {
+	margin-bottom: 1.2em;
+}
+#contact a[href^="mailto:"],
+#contact a[href^="tel:"] {
+	border: solid 2px #e7e3d4; /*#7b8f86; */
+	padding: 0 0.3em;
+	color: #7b8f86;
+	border-radius: 25px;
+	background-color: #ededed; #e7e3d4; /*floralwhite; */
+}
 
 p {
     line-height: 1.4;
