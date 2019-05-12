@@ -4,6 +4,9 @@
 /* #e7e3d4; - nice greish */
 /* #5a636b; - dark grey */
 /* #f5e6cc; - almond like */
+/*font-family: 'Nunito Sans', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+
 * {
     padding: 0;
     margin: 0;
@@ -14,9 +17,10 @@ section, article, main, aside, footer, nav, video, audio, header, figure, pictur
 }
 
 body {
-    background: url(../images/apartment-apple-chair-245032.jpg) no-repeat center center; /*fixed right bottom;*/
-
-    background-size: cover;
+    background: url(../images/apartment-apple-chair-245032.jpg) no-repeat center center;
+	/*font-family: 'Nunito Sans', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
+	background-size: cover;
 }
 #container {
      background-color: rgba(255,255,255,.4);
@@ -32,7 +36,7 @@ img {
 
 h1, h2 {
 	text-align: center;
-    font-size: 3.6em;
+	font-size: 3.6em;
 	letter-spacing: 0.1em;
 	color: #c96b5f; /* burgundy */
     /*color: #fff9d6;*/
@@ -49,6 +53,32 @@ h2 {
 	color: #e7e3d4;
 	background-color: rgba(255,255,255, 0.85);
 }
+#about h3, #contact h3 {
+	font-size: 1.4em;
+	line-height: 1.4em;
+	letter-spacing: 0.01em;
+	width: 60%;
+	margin: auto;
+	padding: 15px;
+	font-style: italic;
+	color:  #666; /* #7b8f86; #5a636b;*/
+	text-align: center;
+	/*color: #e7e3d4;*/
+	background-color: rgba(255,255,255, 0.85);
+}
+#about ul.bullets {
+	text-align: center;
+	background-color: rgba(255,255,255, 0.85);
+	width: 60%;
+	margin: auto;
+}
+#about ul.bullets li {
+	width: 2%;
+	display: inline-block;
+/*	padding: 3px; */
+	margin: 0 4px;
+
+}
 h2.colorBurg {
 	color: #c96b5f;
 }
@@ -58,6 +88,9 @@ h2.colorGr {
 }
 /*#contact h1, #contact h2:first-of-type {
 	margin-bottom: 0.5em;
+}*/
+/*#contact h2:first-of-type {
+	color: floralwhite;
 }*/
 #contact h2 {
 	font-size: 2.4em;
@@ -106,6 +139,8 @@ header {
 nav.mainNav {
    /* background-color: rgba(143,188,143,.7);*/ /*darkseagreen; */
 	margin-top: 3.5%;
+	font-family: 'Nunito Sans', sans-serif;
+/*	font-family: 'Roboto', sans-serif;*/
 }
 
 .mainNav ul {
@@ -195,6 +230,7 @@ nav a.active i {
 
 main {
 	clear: both;
+	margin-top: 20px;
 }
 button.callOut {
 	display: left;
@@ -228,7 +264,8 @@ button.callOut {
 .galWrapper {
        background-color:  #ededed; /* #eae1db; */
        padding: .5em;
-       font-family: 'Roboto', sans-serif;  /* ??????? */
+	   font-family: 'Nunito Sans', sans-serif;
+       /*font-family: 'Roboto', sans-serif; */
        margin: 2% 0 0 0;
        display: flex;
        justify-content: space-between;
@@ -326,6 +363,7 @@ footer a:hover {
 	clear: both;
 }
 /* HOME PAGE */
+
 .hmAnim {
 	display: none;
 }
@@ -364,6 +402,7 @@ h2.hmAnim {
 	font-size: 2.0rem;
 	color: #da7a6e;
 	background: none;
+	margin-bottom: 5px;
 }
 #resWrap h3 {
 	font-size: 1.3rem;
@@ -377,8 +416,8 @@ h2.hmAnim {
 #resWrap aside {
 	width: 26%;
 	float: left;
-	margin: -45px 2% 0;
-	padding: 45px 2% 0;
+	margin: -45px 2%;
+	padding: 45px 2%;
 	border: solid 3px #7b8f86;
 	background-color:  floralwhite;
 	font-size: 1.1em;
@@ -390,7 +429,7 @@ h2.hmAnim {
 	width: 68%;
 	float: left;
 	background-color: rgba(255,255,255,.9);
-	margin: -45px 0 0 0;
+	margin: -45px 0 20px 0;
 	padding: 0 2%;
     border: solid 3px  #7b8f86; /* #da7a6e; */
 }
@@ -448,15 +487,57 @@ aside img {
 	margin: 0 25% 5% 25%;
 	float: none;
 }
-.resBtnGrp {
+/*
+#resWrap ul.slideShow {
+	display: none;
+}
+#resWrap ul.slideShow.actSlide {
+	display: block;
+}
+*/
+
+.resBtnGrp, .artBtn {
+	font-family: 'Nunito Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	text-align: center;
+	clear:both;
+	margin-top: 20px;
 }
+
+/*
 .resBtnGrp button {
-	padding: 5px;
+	min-width: 25%;
+	padding: 10px;
+	font-size: 1em;
 	margin: 2%;
+}*/
+
+/*.resBtnGrp button i {
+	margin-right: 10px;
+}*/
+.resBtnGrp a {
+	min-width: 25%;
+	padding: 10px;
+	font-size: 1em;
+	/*margin: 3%;*/
+	background-color: #c96b5f; /* burlywood -> cup orange */
+	color: lightgoldenrodyellow;
+	/*color: white;*/
 }
-.resBtnGrp button i {
-	margin: 0 3px;
+.artBtn a {
+	padding: 3px;
+	min-width: 80px;
+	margin: 5%;
+	background-color: #c96b5f; /* burlywood -> cup orange */
+	color: lightgoldenrodyellow;
+}
+#home .resBtnGrp {
+	font-size: 1.4em;
+}
+.resBtnGrp a i {
+	margin-right: 10px;
 }
 #training ul, #work ul {
 	list-style-type: none;

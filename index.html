@@ -5,12 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home Page</title>
 	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Roboto:400,700" rel="stylesheet">
+
 	<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script>
         $(function(){
+			$('.fifth').hide();
 			setTimeout(function() {
 				$('.first').fadeIn(500);
 			}, 1000);
@@ -45,7 +48,7 @@
             <ul>
                 <li><a href="index.html" class="active"><i class="icon ion-md-home"></i> Home</a></li>
 				<li><a href="pages/portfolio.html"><i class="icon ion-md-images"></i> Portfolio</a></li>
-				<li><a href="about.html"><i class="icon ion-md-person"></i> About Me</a></li>
+				<li><a href="pages/about.html"><i class="icon ion-md-person"></i> About Me</a></li>
 				<li><a href="pages/resume.html"><i class="icon ion-md-book"></i> Resume</a></li>
 				<li><a href="pages/contact.html"><i class="icon ion-md-contact"></i> Contact</a></li>
             </ul>
@@ -60,11 +63,17 @@
 		<h2 class="second hmAnim">My Name is</h2>
 		<h2 class="third hmAnim">Sofia Faverman</h2>
 		<h2 class="forth hmAnim">I am a Front End Web Developer</h2>
-		<p class="fifth hmAnim">
+		<!--<p class="fifth hmAnim">
 			<button class="callOut">More About Me!</button>
 			<button class="callOut">View My Portfolio!</button>
-		</p>
-		<h2 class="six hmAnim">Link to My GitHub Account: <a class="gitHub"><img src="images/logo-github.svg" alt="github icon" title="My GitHub account"></a></h2>
+		</p>-->
+		<article class="fifth hmAnim resBtnGrp">
+			<a href="pages/about.html"><i class="icon ion-md-briefcase"></i> More About Me!</a>
+			<!--<a href="https://github.com/sfaverman" target="_blank">
+				<i class="icon ion-md-code"></i>LINK TO MY GITHUB ACCOUNT</a>-->
+			<a href="pages/portfolio.html"><i class="icon ion-md-call"></i> View My Portfolio!</a>
+		</article>
+
 	</section>
 
 </main>

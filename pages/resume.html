@@ -5,9 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sofia's Resume</title>
 	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Roboto:400,700" rel="stylesheet">
 	<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 	<!-- Style -->
 	<link rel="stylesheet" href="../css/style.css">
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script>
+		/* jQuery silde show */
+        $(function(){
+			$('.slideShow ul:gt(0)').hide();
+
+			/*window.alert($('.slideShow ul').length);  it is 3*/
+
+
+			var numSlides = $('.slideShow ul').length;
+			/*for (var i = 0; i < numSlides; i++) {
+				$('.slideShow ul:nth-of-type('+i+')').hide('fast', function () {
+				j = i+1;
+				$('.slideShow ul:nth-of-type('+j+')').show(500);
+				}).delay(3000);
+			}*/
+    		/*$('.slideShow ul').each(function (ind, element) {
+				window.console.log("ind="+ind+"element"+element);
+				this.delay(3000).fadeOut(200).next().fadeIn(200).delay(3000);
+			});*/
+
+				/*setInterval(function(){
+				var i =
+				$('.slideShow ul:nth-of-type(i)').fadeOut();
+
+			}, 3000);*/
+
+		}) // end doc ready
+	</script>
 </head>
 <body>
 <section id="container">
@@ -49,27 +80,39 @@
 
 						<!--	<h3><i class="icon ion-md-school"></i> Education</h3>-->
 
-				<h3>Samples</h3>
+				<h3>Gallery</h3>
 			</section>
 
 			<section id="samples">
 
-				<ul>
-					<li>
-						<img src="../images/rrp1.png" alt="Royal Ridge home page">
-					</li>
+				<ul class="slideShow">
+					<ul>
+						<li>
+							<img src="../images/rrp1.png" alt="Royal Ridge home page">
+						</li>
 
-					<li>
-						<img src="../images/rrp2.png" alt="Royal Ridge home page">
-					</li>
-					<!--<li>
-						<img src="../images/sbkc1.png" alt="SBKC home page">
-					</li>
+						<li>
+							<img src="../images/rrp2.png" alt="Royal Ridge home page">
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<img src="../images/sbkc1.png" alt="SBKC home page">
+						</li>
 
+						<li>
+							<img src="../images/sbkc2.PNG" alt="mortgage calculator amortization schedule">
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<img src="../images/mc_at.png" alt="SBKC home page">
+						</li>
 
-					<li>
-						<img src="../images/mc_at.PNG" alt="mortgage calculator amortization schedule">
-					</li>-->
+						<li>
+							<img src="../images/myPortfolio.png" alt="mortgage calculator amortization schedule">
+						</li>
+					</ul>
 					<li>
 						<button>More</button>
 					</li>
@@ -127,7 +170,7 @@
 			<section id="training" class="clearIt">
 				<h3> Recent Training - Cerificate Programs</h2>
 				<ul>
-					<li><img src="../images/bullet.gif" alt=""> FRONT END WEB DEVELOPMENT I   - SDCE Fall 2018 </li>
+					<li><img src="../images/bullet.gif" alt="bullet icon"> FRONT END WEB DEVELOPMENT I   - SDCE Fall 2018 </li>
 					<li><img src="../images/bullet.gif" alt=""> FRONT END WEB DEVELOPMENT II   - SDCE Spring 2019 </li>
 					<li><img src="../images/bullet.gif" alt=""> MOBILE APPLICATION DEVELOPMENT - SDCE Spring 2018 </li>
 					<li><img src="../images/bullet.gif" alt=""> LINUX SERVER ADMINISTRATION - SDCE Spring 2018 </li>
@@ -147,17 +190,18 @@
 			<section id="work">
 				<h3>Work Experience</h3>
 				<ul>
-					<li><img src="../images/bullet.gif" alt="">SDGE - 8 years - Application development and Systems Support</li>
-					<li><img src="../images/bullet.gif" alt="">CSC - 10 years - IBM Mainframe systems installation and support</li>
+					<li><img src="../images/bullet.gif" alt="">SDGE (San Diego Gas &amp; Electric) - 8 years - Application development and Systems Support</li>
+					<li><img src="../images/bullet.gif" alt="">CSC (Computer Sciences Corporation) - 10 years - IBM Mainframe systems installation and support</li>
 				</ul>
 			</section>
 
 		</article>
 			</section>
 		<article class="resBtnGrp">
-			<button><i class="icon ion-md-briefcase"></i> MY RECENT PROJECTS</button>
-			<button><i class="icon ion-md-code"></i>LINK TO MY GITHUB ACCOUNT</button>
-			<button><i class="icon ion-md-call"></i> GET IN TOUCH WITH ME</button>
+			<a href="portfolio.html"><i class="icon ion-md-briefcase"></i> MY RECENT PROJECTS</a>
+			<a href="https://github.com/sfaverman" target="_blank">
+				<i class="icon ion-md-code"></i>LINK TO MY GITHUB ACCOUNT</a>
+			<a href="contact.html"><i class="icon ion-md-call"></i> GET IN TOUCH WITH ME</as>
 		</article>
 
 </main>
