@@ -17,7 +17,7 @@ section, article, main, aside, footer, nav, video, audio, header, figure, pictur
 }
 
 body {
-    background: url(../images/apartment-apple-chair-245032.jpg) no-repeat center center;
+    background: url(../images/apartment-apple-chair-245032-2.jpg) no-repeat center center;
 	/*font-family: 'Nunito Sans', sans-serif;*/
 	font-family: 'Roboto', sans-serif;
 	background-size: cover;
@@ -177,7 +177,7 @@ body {
 }
 #navigation label {
     display: block;
-    background: url("../images/nav-icon.png") no-repeat right center;
+    background: url("../images//nav-icon.png") no-repeat right center;
     position: relative;
     top: 0px;
     right: 20px;
@@ -185,6 +185,7 @@ body {
     cursor: pointer;
     user-select: none;
 	font-size: 5em;
+    /*color: white;*/
 }
 #navigation input[type=checkbox]:checked ~ nav {
     height: auto;
