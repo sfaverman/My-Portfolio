@@ -21,6 +21,8 @@ body {
 	/*font-family: 'Nunito Sans', sans-serif;*/
 	font-family: 'Roboto', sans-serif;
 	background-size: cover;
+    position: relative;
+    min-height: 100vh;
 }
 #container {
      background-color: rgba(255,255,255,.4);
@@ -89,12 +91,7 @@ h2.colorBurg {
 h2.colorGr {
 	color: #7b8f86;
 }
-/*#contact h1, #contact h2:first-of-type {
-	margin-bottom: 0.5em;
-}*/
-/*#contact h2:first-of-type {
-	color: floralwhite;
-}*/
+
 #contact h2 {
 	font-size: 2.4em;
 	padding: 0 0.3em 0.5em;
@@ -234,6 +231,7 @@ nav a.active i {
 main {
 	clear: both;
 	margin-top: 20px;
+    padding-bottom: 10%; /*140px; */
 }
 .callOut {
 	display: left;
@@ -329,6 +327,13 @@ a.gitHub img {
 	height: auto;
 	/* height: 300px; - resize images to be same size */
 }
+.card img {
+	transition: all .2s ease;
+   /* vertical-align: middle;*/
+}
+.card img:hover {
+	transform: scale(2);
+}
 hr {
 	margin: 8px 0;
 }
@@ -339,6 +344,9 @@ footer {
 	padding: 2%;
 	margin-top: 2%;
 	color: #fff;
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
 }
 footer a {
 	color: white;
@@ -412,8 +420,8 @@ h2.hmAnim {
 #resWrap aside {
 	/*width: 26%;
 	float: left;*/
-	margin: -45px 2%;
-	padding: 45px 2%;
+	margin: -45px 2% 1% 2%;
+	padding: 45px 2% 0 2%;
 	border: solid 3px #7b8f86;
 	background-color:  floralwhite;
 	font-size: 1.1em;
@@ -482,12 +490,40 @@ aside img {
 	height: auto;
 	margin-bottom: 5%;
 	border: solid 3px  #e7e3d4; /*#5a636b; */ /*#da7a6e; */
+	transition: all .2s ease;
+    /*vertical-align: middle;*/
 }
-#samples button {
+#samples img:hover {
+	transform: scale(1.5);
+}
+/*#samples button {
 	width: 50%;
-	/*text-align: center;*/
+	text-align: center;
 	margin: 0 25% 5% 25%;
 	float: none;
+}*/
+#samples {
+	padding-bottom: 30px;
+}
+
+aside #slideNav {
+	text-align: center;
+    width: 100% !important;
+	margin-buttom: 10px;
+    border: none;
+	padding-top: 10px;
+}
+#slideNav ul {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#slideNav li {
+    display: inline-block;
+   /* border: solid 2px dimgray;*/
+    padding: 2px 6px;
+    margin: 3px;
+    background-color: #7b8f86;
+    color: white;
 }
 /*
 #resWrap ul.slideShow {
@@ -504,6 +540,7 @@ aside img {
 	text-align: center;
 	clear:both;
 	margin-top: 20px;
+	margin-bottom: 10px;
 }
 #portfolio .artBtn {
 	display: flex;
@@ -511,22 +548,12 @@ aside img {
 	justify-content: space-around;
 	margin-top: 5px;
 }
-/*
-.resBtnGrp button {
-	min-width: 25%;
-	padding: 10px;
-	font-size: 1em;
-	margin: 2%;
-}*/
 
-/*.resBtnGrp button i {
-	margin-right: 10px;
-}*/
 .resBtnGrp a {
 	display: block;
 	min-width: 250px;
 	/*min-width: 25%;*/
-	padding: 10px;
+	padding: 1% 1.3%;
 	font-size: 1em;
 	margin: 5%;
 	background-color: #c96b5f; /* burlywood -> cup orange */
@@ -606,7 +633,9 @@ aside img {
 	.card {
 		   width: 30%;
 		   height: 40%;
+
 	}
+
 	.artBtn button {
 		padding: 3px;
 		min-width: 80px;
@@ -626,6 +655,7 @@ aside img {
 		align-items: center;
 		justify-content: space-around;
 	}
+
 	.resBtnGrp a {
 		margin: auto;
 	}
@@ -650,3 +680,7 @@ aside img {
 	   content: url('../images/bullet.gif');
 	   margin-right: 10%;
 	}
+	#skills {
+	font-size: 1.1em;
+	}
+}

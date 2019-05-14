@@ -9,35 +9,74 @@
 	<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 	<!-- Style -->
 	<link rel="stylesheet" href="../css/style.css">
+
 	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script>
-		/* jQuery silde show */
+		/* my jQuery silde show */
+
+		/* slides change every 2 sec, click on Pause - stops, click on 1-2-3 picks slide and slide, click on Continue buttom to continue slide show */
+		/* slides change every 2 sec, click on Pause - stops, click on 1-2-3 picks slide and slide, click on Continue buttom to continue slide show */
+
         $(function(){
 			$('.slideShow ul:gt(0)').hide();
 
-			/*window.alert($('.slideShow ul').length);  it is 3*/
-
-
 			var numSlides = $('.slideShow ul').length;
-			/*for (var i = 0; i < numSlides; i++) {
-				$('.slideShow ul:nth-of-type('+i+')').hide('fast', function () {
-				j = i+1;
-				$('.slideShow ul:nth-of-type('+j+')').show(500);
-				}).delay(3000);
-			}*/
-    		/*$('.slideShow ul').each(function (ind, element) {
-				window.console.log("ind="+ind+"element"+element);
-				this.delay(3000).fadeOut(200).next().fadeIn(200).delay(3000);
-			});*/
 
-				/*setInterval(function(){
-				var i =
-				$('.slideShow ul:nth-of-type(i)').fadeOut();
+            var interval = null;
+            var curSlide = 1;
+			var nextSlide = 2;
 
-			}, 3000);*/
 
-		}) // end doc ready
+            /* slide function: funSlide */
+
+            var funSlide = function() {
+                $('.slideShow ul:nth-of-type(' + curSlide + ')').fadeOut(200 , function() {
+
+                    $('.slideShow ul:nth-of-type(' + nextSlide + ')').fadeIn(200);
+                    curSlide = nextSlide;
+					if (nextSlide == numSlides) {
+                         nextSlide = 1;
+                    } else {
+                         nextSlide = curSlide + 1;
+                    }; // end if-else
+				});
+             }; // end funSlide function
+
+            /* interval function */
+
+            var startInt = function() {
+                interval = setInterval(function(){
+                    funSlide();
+                    }, 2000); // end setInterval
+                };
+
+			/* start Interval - start slideShow */
+            startInt();
+
+            /* slide navigation event listener */
+
+            $( "#slideNav ul li").on({
+                    "click": function() {
+						if ($(this).attr("class") !== 'cont') {
+                        	clearInterval(interval); /* stop slide show */
+							if ($(this).attr("class") !== 'pause') {
+								nextSlide = Number($(this).text());
+                                funSlide();
+							}
+						} else {  /* continue slide */
+							startInt();
+						}
+                     }
+                   /* "mouseover": function() {
+                        clearInterval(interval);
+                        console.log( "hovered!" + $(this).text() );
+                        ind = Number($(this).text());
+                        startInt();
+                     }*/
+            }); // end 1-2-3 slideNav menu event handler
+
+	     }) // end doc ready
 	</script>
 </head>
 <body>
@@ -113,13 +152,21 @@
 							<img src="../images/myPortfolio.png" alt="mortgage calculator amortization schedule">
 						</li>
 					</ul>
-					<li>
-						<button>More</button>
-					</li>
+
 
 				</ul>
 
 		    </section>
+		    <article id="slideNav">
+						<!--<button>More</button>-->
+						<ul >
+					    	<li class="pause"><i class="icon ion-md-pause"></i></li>
+						    <li>1</li>
+						    <li>2</li>
+						    <li>3</li>
+		        	        <li class="cont"><i class="icon ion-md-arrow-dropright-circle"></i></li>
+			        	</ul>
+            </article>
 		</aside>
 		<article>
 				<h1>Sofia Faverman</h1>
@@ -200,7 +247,7 @@
 		<article class="resBtnGrp">
 			<a href="portfolio.html"><i class="icon ion-md-briefcase"></i> MY RECENT PROJECTS</a>
 			<a href="https://github.com/sfaverman" target="_blank">
-				<i class="icon ion-md-code"></i>LINK TO MY GITHUB ACCOUNT</a>
+				<i class="icon ion-md-code"></i>LINK TO MY GITHUB ACCT</a>
 			<a href="contact.html"><i class="icon ion-md-call"></i> GET IN TOUCH WITH ME</as>
 		</article>
 
