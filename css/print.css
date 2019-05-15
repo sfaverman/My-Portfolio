@@ -1,0 +1,19 @@
+body {
+    font-family: serif;
+    font-size: 12pt;
+    line-height: normal;
+    background-color: white;
+}
+main {
+    width: 8in;
+    background: none;
+}
+header, nav, footer {
+    display: none;
+}
+.video {
+	display: none;
+}
+#samples, #slideNav, .resBtnGrp, .artBtn {
+	display: none;
+}
