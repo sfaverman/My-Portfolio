@@ -1,11 +1,11 @@
-/* #c96b5f -rgba(201, 107, 95, .8); - cup orange/burgundy - replace burlywood */
-/* #ffe3bd - dark lemon  - replace blanchealmond ??? */
+/* #c96b5f -rgba(201, 107, 95, .8) - cup orange */
+/* #ffe3bd - dark lemon  - replace blanchealmond */
 /* #7b8f86 - green leaf - replace darkseagreen */
 /* #e7e3d4; - nice greish */
 /* #5a636b; - dark grey */
 /* #f5e6cc; - almond like */
-/*font-family: 'Nunito Sans', sans-serif;*/
-/*font-family: 'Roboto', sans-serif;*/
+/* font-family: 'Nunito Sans', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
 
 * {
     padding: 0;
@@ -18,7 +18,6 @@ section, article, main, aside, footer, nav, video, audio, header, figure, pictur
 
 body {
     background: url(../images/apartment-apple-chair-245032-2.jpg) no-repeat center center;
-	/*font-family: 'Nunito Sans', sans-serif;*/
 	font-family: 'Roboto', sans-serif;
 	background-size: cover;
     position: relative;
@@ -41,8 +40,7 @@ h1, h2 {
 	font-size: 3.6em;
 	letter-spacing: 0.1em;
 	color: #c96b5f; /* burgundy */
-    /*color: #fff9d6;*/
-	/* text-shadow: horiz. offset, vert. offset, blure, color */
+    /* text-shadow: horiz. offset, vert. offset, blure, color */
     text-shadow: 1px 1px 2px lightgoldenrodyellow, /* #fff,*/
                  2px 2px 3px #666,
                  3px 3px 5px #999;
@@ -122,14 +120,12 @@ a {
 	float: left;
 	width: 15%;
 	height: auto;
-	border: solid 5px #e7e3d4; /*#c96b5f; /* med burgundy */
+	border: solid 5px #e7e3d4; /*#c96b5f; - med cup */
 	margin: 2% 0 0 2%;
 }
 header {
 	height: 100px;
-	 background-color: #5a636b; /* dark grey */
-	/* background-image: linear-gradient(to bottom, darkseagreen, #ffe3bd /*blanchedalmond*/); */
-	margin: 2%;
+	background-color: #5a636b; /* dark grey */
 	position: relative;
 }
 
@@ -230,18 +226,18 @@ nav a.active i {
 
 main {
 	clear: both;
-	margin-top: 20px;
-    padding-bottom: 10%; /*140px; */
+   /* margin-top: 20px;*/
+   	padding-bottom: 10%; /*140px; */
 }
 .callOut {
-	display: left;
-	background-color: #7b8f86; /* rgba(143,188,143,.9); */ /* darkseagreen; */
+	background-color: #7b8f86; /* rgba(143,188,143,.9); darkseagreen; */
   	color: lightgoldenrodyellow;
 	font-size: 1.4em;
 	margin-left: 4%;
 	padding: 3px 5px;
 }
-/*.blinking{
+/*
+.blinking{
     animation:blinkingText 2.5s infinite;
 }
 @keyframes blinkingText{
@@ -250,8 +246,8 @@ main {
     50%{    color: lightgoldenrodyellow; }
     99%{    color:transparent;  }
     100%{   color: lightgoldenrodyellow;    }
-}*/
-
+}
+*/
 #gallery {
 	width: 80%;
 	float: left;
@@ -265,7 +261,7 @@ main {
        display: flex;
        justify-content: space-between;
        flex-wrap: wrap; /* nowrap*/
-}
+ }
 .galWrapper article {
     padding: 10px 0;
     flex-direction: column;
@@ -286,17 +282,15 @@ button {
 	min-width: 80px;
 	color: white;
 }
-.artBtn button {
-	background-color: #c96b5f; /* burlywood -> cup orange */
+/*.artBtn button {
+	background-color: #c96b5f;  burlywood -> cup orange
 	margin: 5px;
 	padding: 2px;
 	min-width: 70px;
 	color: white;
 
-}
-/*.artBtn a.gitHub {
-	position: relative;
 }*/
+
 a.gitHub img {
 	width: 7%;
 	height: auto;
@@ -310,18 +304,19 @@ a.gitHub img {
 }
 
 .card {
-   width: 80%;
+   width: 85%;
    height: 100%;
    color: #fff;
    font-size: 1em;
-   margin: .5em auto;
+   margin: 0.5em auto;
    display: flex;
    align-items: center;
    justify-content: center;
-
-   border: solid 5px #7b8f86; /*darkseagreen; /*silver;*/
-  /* background-color:  #00ad81;*//**/
-}
+   border: solid 5px #7b8f86; /*darkseagreen; */
+ }
+article.card:last-of-type {
+    margin-bottom: 60px;
+  }
 .card img.snap {
 	width: 90%;
 	height: auto;
@@ -329,10 +324,10 @@ a.gitHub img {
 }
 .card img {
 	transition: all .2s ease;
-   /* vertical-align: middle;*/
+    vertical-align: middle;
 }
 .card img:hover {
-	transform: scale(2);
+	transform: scale(1.5);
 }
 hr {
 	margin: 8px 0;
@@ -341,7 +336,7 @@ footer {
 	clear: both;
 	background-color: #7b8f86; /* rgba(143,188,143,.9);*/ /*darkseagreen; */
 	text-align: center;
-	padding: 2%;
+	padding: 2% 0 3%;
 	margin-top: 2%;
 	color: #fff;
     position: absolute;
@@ -392,12 +387,13 @@ h2.hmAnim {
 	color: #7b8f86;
 }
 /* RESUME PAGE */
+/*
 #resWrap header {
 	background: none;
 	padding: 0;
 	margin-bottom: 10px;
 }
-
+*/
 #resWrap h1 {
 	font-size: 2.4rem;
 	color:#e7e3d4; /* nice grey */
@@ -418,24 +414,19 @@ h2.hmAnim {
 }
 
 #resWrap aside {
-	/*width: 26%;
-	float: left;*/
-	margin: -45px 2% 1% 2%;
-	padding: 45px 2% 0 2%;
-	border: solid 3px #7b8f86;
+	margin: 0;
+	padding: 2% 1% 8%;
 	background-color:  floralwhite;
 	font-size: 1.1em;
 }
+
 #resWrap aside ul li {
 	margin-bottom: 0.5em;
 }
 #resWrap article {
-	/*width: 68%;
-	float: left;*/
 	background-color: rgba(255,255,255,.9);
 	margin: -45px 0 20px 0;
-	padding: 0 2%;
-    border: solid 3px  #7b8f86; /* #da7a6e; */
+	padding: 0 2% 1%;
 }
 
 #resWrap article h3 {
@@ -461,78 +452,95 @@ h2.hmAnim {
 #resWrap .col3 ul li {
 	margin-bottom: 0.2em;
 }
-/*#skills ul li:before {
-   content: url('../images/bullet.gif');
-   margin-right: 10%;
-}*/
+
 #skills {
 	font-size: 0.8em;
 }
-#resWrap aside {
+
+/*#resWrap aside {
 	display: none;
-}
+}*/
 aside ul {
 	 list-style-type: none;
 }
-aside img {
-	width: 15%;
-	height: auto;
-	/*margin: auto;
-	padding: 0;*/
-}
+
 #resWrap aside h3 {
 	color:  #7b8f86;
 	margin: 10px 0;
 }
+/* Slide Show */
 
 #samples img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 	margin-bottom: 5%;
-	border: solid 3px  #e7e3d4; /*#5a636b; */ /*#da7a6e; */
+	border: solid 5px #e7e3d4; /*#5a636b; */ /*#da7a6e; */
 	transition: all .2s ease;
     /*vertical-align: middle;*/
 }
 #samples img:hover {
 	transform: scale(1.5);
 }
-/*#samples button {
-	width: 50%;
-	text-align: center;
-	margin: 0 25% 5% 25%;
-	float: none;
-}*/
+
 #samples {
 	padding-bottom: 30px;
 }
 
+#samples ul ul li {
+	display: inline-block;
+	width: 49%;
+}
+/* WORKING !!!!! */
+
+#resWrap aside h3 {
+	background-color: #7b8f86;
+	border-radius: 25px;
+	padding: .5%;
+	color: floralwhite;
+}
+#resWrap article h1,
+#resWrap article h2 {
+	display: none;
+}
+#resWrap aside h1, #resWrap aside h2 {
+	display: block;
+}
+#resWrap aside, #resWrap article {
+	border: none;
+}
+#resWrap #skills article {
+	border: solid 3px #7b8f86;
+}
+.contact ul {
+	text-align: center;
+	color: #5a636b;
+}
+.contact ul li {
+	display: inline-block;
+	padding: 2%;
+}
 aside #slideNav {
 	text-align: center;
     width: 100% !important;
-	margin-buttom: 10px;
-    border: none;
-	padding-top: 10px;
+	margin-bottom: 10px;
+    padding-top: 10px;
+
+
 }
 #slideNav ul {
-	margin-bottom: 0;
-	padding-bottom: 0;
+	width: 100% !important;
+	margin-bottom: 10px;
+	padding: 8px 0 2px;
+	background-color: rgba(231, 227, 212, 0.6); /*#e7e3d4;*/
 }
 #slideNav li {
     display: inline-block;
    /* border: solid 2px dimgray;*/
-    padding: 2px 6px;
+    padding: 2px 5px;
     margin: 3px;
     background-color: #7b8f86;
     color: white;
 }
-/*
-#resWrap ul.slideShow {
-	display: none;
-}
-#resWrap ul.slideShow.actSlide {
-	display: block;
-}
-*/
 
 .resBtnGrp, .artBtn {
 	font-family: 'Nunito Sans', sans-serif;
@@ -540,13 +548,21 @@ aside #slideNav {
 	text-align: center;
 	clear:both;
 	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 30px;
 }
+#about .resBtnGrp {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
 #portfolio .artBtn {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	margin-top: 5px;
+	margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .resBtnGrp a {
@@ -594,6 +610,16 @@ aside #slideNav {
 /* Media Quiery */
 
 @media screen and (min-width: 450px) {
+	#skills ul li:before {
+	   content: url('../images/bullet.gif');
+	   margin-right: 10%;
+	}
+	#skills {
+		font-size: 0.9em;
+	}
+	.resBtnGrp, .artBtn {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
 }
 
 @media screen and (min-width: 730px) {
@@ -612,16 +638,12 @@ aside #slideNav {
 		float: right;
 		width: 88%;
 	}
-	nav.mainNav {
-    /*	background-color: darkseagreen;*/
-    }
 	nav.mainNav ul {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 		margin: 0;
 	}
-
 	#myPhoto {
 		width: 10%;
 		margin: 1.5% 0 0 1.5%;
@@ -629,58 +651,76 @@ aside #slideNav {
 	.callOut {
 		font-size: 2.0em;
 	}
-
 	.card {
 		   width: 30%;
 		   height: 40%;
-
 	}
-
-	.artBtn button {
-		padding: 3px;
-		min-width: 80px;
-	}
+    article.card:last-of-type {
+          margin-bottom: 20px;
+    }
 	a.gitHub img {
 		width: 5%;
+	}
+	#resWrap h1, h2 {
+		display: block;
+    }
+	#resWrap aside h1, #resWrap aside h2 {
+		display: none;
 	}
 	h1, h2, #about h3, #contact h3,
 	#about ul.bullets {
 		width: 70%;
 	}
-	/*#portfolio h2 {
-		margin-bottom: 10px;
-	}*/
 	.resBtnGrp, .artBtn {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		margin: auto;
 	}
-
+    #about .resBtnGrp, #resume .resBtnGrp {
+		margin-top: 5%;
+        margin-bottom: 5%;
+    }
 	.resBtnGrp a {
 		margin: auto;
 	}
-
 	#resume .resBtnGrp a {
-		min-width: none;
+		/*min-width: none;*/
 		font-size: .9em;
 	}
 	#resWrap aside {
+      /*  margin-top: 0.5em;*/
+		display: block;
 		width: 26%;
 		float: left;
+		margin: -45px 2% 1% 2%;
+	    padding: 45px 1% 0 1%;
+		border: solid 3px #7b8f86;
 	}
-
 	#resWrap article {
+        margin-top: 0.1em;
 		width: 68%;
 		float: left;
+		border: solid 3px #7b8f86;
 	}
-	#resume aside {
+    #resWrap article h1,
+    #resWrap article h2 {
+	    display: block;
+    }
+	#resWrap aside h3 {
+		background: none;
+		color:  #7b8f86;
+	}
+	article#slideNav {
+		border: none;
+    }
+	#samples ul ul li {
 		display: block;
+		width: 100%;
 	}
-	#skills ul li:before {
-	   content: url('../images/bullet.gif');
-	   margin-right: 10%;
-	}
+}
+@media screen and (min-width: 850px) {
 	#skills {
-	font-size: 1.1em;
+		font-size: 1.1em;
 	}
 }
