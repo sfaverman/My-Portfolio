@@ -20,9 +20,9 @@
 		/* slides change every 2 sec, click on Pause - stops, click on 1-2-3 picks slide and slide, click on Continue buttom to continue slide show */
 
         $(function(){
-			$('.slideShow ul:gt(0)').hide();
+			$('.slideShow > li:gt(0)').hide();
 
-			var numSlides = $('.slideShow ul').length;
+			var numSlides = $('.slideShow > li').length;
 
             var interval = null;
             var curSlide = 1;
@@ -32,9 +32,9 @@
             /* slide function: funSlide */
 
             var funSlide = function() {
-                $('.slideShow ul:nth-of-type(' + curSlide + ')').fadeOut(200 , function() {
+                $('.slideShow > li:nth-of-type(' + curSlide + ')').fadeOut(200 , function() {
 
-                    $('.slideShow ul:nth-of-type(' + nextSlide + ')').fadeIn(200);
+                    $('.slideShow > li:nth-of-type(' + nextSlide + ')').fadeIn(200);
                     curSlide = nextSlide;
 					if (nextSlide == numSlides) {
                          nextSlide = 1;
@@ -81,7 +81,7 @@
 	</script>
 </head>
 <body>
-<section id="container">
+<div id="container">
 <header>
 	<div>
 		<img id="myPhoto" src="../images/sofia.jpg" alt="my photo" title="Sofia Faverman">
@@ -126,35 +126,39 @@
 			<section id="samples">
 
 				<ul class="slideShow">
-					<ul>
-						<li>
-							<img src="../images/rrp1.png" alt="Royal Ridge home page">
-						</li>
+					<li>
+					    <ul>
+					        <li>
+					            <img src="../images/rrp1.png" alt="Royal Ridge home page">
+					        </li>
 
-						<li>
-							<img src="../images/rrp2.png" alt="Royal Ridge home page">
-						</li>
-					</ul>
-					<ul>
-						<li>
-							<img src="../images/sbkc1.png" alt="SBKC home page">
-						</li>
+					        <li>
+					            <img src="../images/rrp2.png" alt="Royal Ridge home page">
+					        </li>
+					    </ul>
+					</li>
+					<li>
+					    <ul>
+					        <li>
+					            <img src="../images/sbkc1.png" alt="SBKC home page">
+					        </li>
 
-						<li>
-							<img src="../images/sbkc2.png" alt="mortgage calculator amortization schedule">
-						</li>
-					</ul>
-					<ul>
-						<li>
-							<img src="../images/mc_at.jpg" alt="SBKC home page">
-						</li>
+					        <li>
+					            <img src="../images/sbkc2.png" alt="mortgage calculator amortization schedule">
+					        </li>
+					    </ul>
+					</li>
+					<li>
+					    <ul>
+					        <li>
+					            <img src="../images/mc_at.jpg" alt="SBKC home page">
+					        </li>
 
-						<li>
-							<img src="../images/myPortfolio.png" alt="mortgage calculator amortization schedule">
-						</li>
-					</ul>
-
-
+					        <li>
+					            <img src="../images/myPortfolio.png" alt="mortgage calculator amortization schedule">
+					        </li>
+					    </ul>
+					</li>
 				</ul>
 
 		    </section>
@@ -215,7 +219,7 @@
 			</section>
 
 			<section id="training" class="clearIt">
-				<h3> Recent Training - Cerificate Programs</h2>
+				<h3> Recent Training - Cerificate Programs</h3>
 				<ul>
 					<li><img src="../images/bullet.gif" alt="bullet icon"> FRONT END WEB DEVELOPMENT I   - SDCE Fall 2018 </li>
 					<li><img src="../images/bullet.gif" alt=""> FRONT END WEB DEVELOPMENT II   - SDCE Spring 2019 </li>
@@ -248,7 +252,7 @@
 			<a href="portfolio.html"><i class="icon ion-md-briefcase"></i> MY RECENT PROJECTS</a>
 			<a href="https://github.com/sfaverman" target="_blank">
 				<i class="icon ion-md-code"></i>LINK TO MY GITHUB ACCT</a>
-			<a href="contact.html"><i class="icon ion-md-call"></i> GET IN TOUCH WITH ME</as>
+			<a href="contact.html"><i class="icon ion-md-call"></i> GET IN TOUCH WITH ME</a>
 		</article>
 
 </main>
@@ -262,6 +266,6 @@
 	<a href="resume.html" class="active">Resume</a> -
 	<a href="contact.html">Contact</a>
 </footer>
-</section>
+</div>
 </body>
 </html>

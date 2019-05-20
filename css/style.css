@@ -17,7 +17,7 @@ section, article, main, aside, footer, nav, video, audio, header, figure, pictur
 }
 
 body {
-    background: url(../images/apartment-apple-chair-245032-2.jpg) no-repeat center center;
+    background: url(../images/apartment-apple-chair-245032-3.jpg) no-repeat center center;
 	font-family: 'Roboto', sans-serif;
 	background-size: cover;
     position: relative;
@@ -322,13 +322,13 @@ article.card:last-of-type {
 	height: auto;
 	/* height: 300px; - resize images to be same size */
 }
-.card img {
+/*.card img {
 	transition: all .2s ease;
     vertical-align: middle;
 }
 .card img:hover {
 	transform: scale(1.5);
-}
+}*/
 hr {
 	margin: 8px 0;
 }
@@ -387,13 +387,7 @@ h2.hmAnim {
 	color: #7b8f86;
 }
 /* RESUME PAGE */
-/*
-#resWrap header {
-	background: none;
-	padding: 0;
-	margin-bottom: 10px;
-}
-*/
+
 #resWrap h1 {
 	font-size: 2.4rem;
 	color:#e7e3d4; /* nice grey */
@@ -460,6 +454,11 @@ h2.hmAnim {
 /*#resWrap aside {
 	display: none;
 }*/
+/* Dont show slideShow on mobile view */
+#samples, #slideNav, #resWrap aside h3 {
+	display: none;
+}
+
 aside ul {
 	 list-style-type: none;
 }
@@ -475,12 +474,12 @@ aside ul {
 	height: auto;
 	margin-bottom: 5%;
 	border: solid 5px #e7e3d4; /*#5a636b; */ /*#da7a6e; */
-	transition: all .2s ease;
+	/*transition: all .2s ease;*/
     /*vertical-align: middle;*/
 }
-#samples img:hover {
+/*#samples img:hover {
 	transform: scale(1.5);
-}
+}*/
 
 #samples {
 	padding-bottom: 30px;
@@ -623,6 +622,9 @@ aside #slideNav {
 }
 
 @media screen and (min-width: 730px) {
+    #samples, #slideNav,#resWrap aside h3 {
+	        display: block;
+    }
 	#navigation label {
         display: none;
     }
