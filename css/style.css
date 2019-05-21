@@ -56,8 +56,8 @@ h2 {
 #portfolio h2 {
 		margin-bottom: 10px;
 	}
-#about h3, #contact h3 {
-	font-size: 1.4em;
+#about h3, #contact h3, #feedback h3 {
+	font-size: 1.2em;
 	line-height: 1.4em;
 	letter-spacing: 0.01em;
 	width: 90%;
@@ -78,11 +78,9 @@ h2 {
 #about ul.bullets li {
 	width: 2%;
 	display: inline-block;
-/*	padding: 3px; */
 	margin: 0 4px;
-
 }
-h2.colorBurg {
+h2.colorBurg, .colorBurg {
 	color: #c96b5f;
 }
 
@@ -236,6 +234,7 @@ main {
 	margin-left: 4%;
 	padding: 3px 5px;
 }
+
 /*
 .blinking{
     animation:blinkingText 2.5s infinite;
@@ -282,14 +281,6 @@ button {
 	min-width: 80px;
 	color: white;
 }
-/*.artBtn button {
-	background-color: #c96b5f;  burlywood -> cup orange
-	margin: 5px;
-	padding: 2px;
-	min-width: 70px;
-	color: white;
-
-}*/
 
 a.gitHub img {
 	width: 7%;
@@ -414,8 +405,8 @@ h2.hmAnim {
 	font-size: 1.1em;
 }
 
-#resWrap aside ul li {
-	margin-bottom: 0.5em;
+#resWrap aside ul {
+	padding-bottom: 1.2em;
 }
 #resWrap article {
 	background-color: rgba(255,255,255,.9);
@@ -606,6 +597,90 @@ aside #slideNav {
    margin-right: 10%;
 }*/
 
+#contact form {
+	background-color: rgba(255,255,255, 0.85);
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 30px; /* ??? */
+}
+#contact label {
+    width: 100%;
+    float: left;
+	font-weight: 500;
+	padding: 4px 0 2px;
+}
+#contact input ,#contact textarea {
+    padding: 4px;
+    width: 100%;
+    float: left;
+	margin-bottom: 10px;
+}
+#contact input:focus, #contact form textarea:focus {
+    border: 2px solid  #7b8f86;
+	outline-width: 0;
+}
+
+#contact form input:valid, #contact form textarea:valid {
+    border: 2px solid #9FBd70;
+}
+
+#contact textarea {
+    height: 7em;
+}
+
+#contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5%
+}
+
+#contact ul#radioList {
+	margin: 0;
+	padding: 0;
+}
+#contact #radioList li  {
+	display: inline-block;
+	width: 20%;
+	padding-bottom: 0;
+    margin-bottom: 0;
+}
+#contact #radioList label {
+	text-align: center;
+	font-weight: 500;
+}
+#contact form li p {
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+#contact input[type="submit"] {
+    border: 2px solid #fff;
+    background-color:  #7b8f86;
+    color: #fff;
+    padding: .25em .8em;
+    margin: .5em .5em;
+    width: 126px;
+    float:right;
+}
+#contact h1, #about h1, #feedback h1 {
+	font-size: 2.4em;
+}
+#contact h2, #about h2 {
+	font-size: 2em;
+}
+#contact h3, #feedback h3 {
+	padding-bottom: 0.2em;
+}
+#contact .note {
+	font-size: 0.9em;
+	margin-left: 5px;
+}
+#contact span {
+	font-size: 1.2em;
+	letter-spacing: 0.05em;
+	margin: 0 30%;
+}
+
 /* Media Quiery */
 
 @media screen and (min-width: 450px) {
@@ -619,6 +694,22 @@ aside #slideNav {
 	.resBtnGrp, .artBtn {
 		margin-bottom: 10px;
 		padding-bottom: 10px;
+	}
+	#resWrap aside ul {
+		padding-bottom: 0.5em;
+	}
+	#contact h1, #about h1 {
+	font-size: 3.6em;
+	}
+	#contact h2, #about h2 {
+		font-size: 2.4em;
+	}
+	#contact h3, #about h3, #feedback h3 {
+		font-size: 1.4em;
+	}
+	#contact span {
+		margin: 0;
+    }
 }
 
 @media screen and (min-width: 730px) {
@@ -669,7 +760,7 @@ aside #slideNav {
 	#resWrap aside h1, #resWrap aside h2 {
 		display: none;
 	}
-	h1, h2, #about h3, #contact h3,
+	h1, h2, #about h3, #contact h3, #contact form, #feedback h3,
 	#about ul.bullets {
 		width: 70%;
 	}
