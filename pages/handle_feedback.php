@@ -79,10 +79,6 @@ if(isset($_POST['email'])) {
 	$comments = $_POST['questions']; //required
 	$contMethod = $_POST['contMethod']; //required
 
-	if(!isset($_POST['phone']) ||
-        ($contMethod = 'phone' | $contMethod = 'text')) {
-        died('Based on your preferred method of contact, please enter your phone number.');
-    }
 	switch ($contMethod) {
     case "phone":
         $method = "call you at $phone";
@@ -112,6 +108,12 @@ if(isset($_POST['email'])) {
 
   if(!preg_match($string_exp,$lName)) {
     $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+  }
+
+  $phone_exp = "/[0-9]{3}-[0-9]{3}-[0-9]{4}/";
+
+  if(!preg_match($phone_exp,$phone) && ($contMethod === 'phone' || $contMethod === 'text')) {
+    $error_message .= 'The Phone Number you entered does not appear to be valid.<br />';
   }
 
   if(strlen($comments) < 2) {
