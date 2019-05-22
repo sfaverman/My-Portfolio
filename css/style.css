@@ -514,8 +514,6 @@ aside #slideNav {
     width: 100% !important;
 	margin-bottom: 10px;
     padding-top: 10px;
-
-
 }
 #slideNav ul {
 	width: 100% !important;
@@ -525,7 +523,6 @@ aside #slideNav {
 }
 #slideNav li {
     display: inline-block;
-   /* border: solid 2px dimgray;*/
     padding: 2px 5px;
     margin: 3px;
     background-color: #7b8f86;
@@ -609,20 +606,34 @@ aside #slideNav {
 	font-weight: 500;
 	padding: 4px 0 2px;
 }
-#contact input ,#contact textarea {
+#contact input, #contact textarea {
     padding: 4px;
     width: 100%;
     float: left;
 	margin-bottom: 10px;
+	background-color: none;
 }
-#contact input:focus, #contact form textarea:focus {
+#contact input:focus, #contact textarea:focus {
     border: 2px solid  #7b8f86;
+	background-color: floralwhite;
 	outline-width: 0;
 }
 
-#contact form input:valid, #contact form textarea:valid {
+/*#contact input:required, #contact textarea:required: {
+    border: 2px solid #7b8f86;
+}*/
+
+#contact input:optional {
     border: 2px solid #9FBd70;
 }
+
+#contact input:valid, #contact textarea:valid {
+    border: 2px solid #9FBd70;
+}
+
+/*#contact input:invalid, #contact textarea:invalid {
+    border: 2px solid #c96b5f;
+}*/
 
 #contact textarea {
     height: 7em;
@@ -654,7 +665,7 @@ aside #slideNav {
 }
 
 #contact input[type="submit"] {
-    border: 2px solid #fff;
+    border: 2px solid #7b8f86;
     background-color:  #7b8f86;
     color: #fff;
     padding: .25em .8em;

@@ -51,7 +51,7 @@ if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "sofiasd@yahoo.com";
-    $email_subject = "Email from my Portfolio website";
+    $email_subject = "Email from Sofia's Portfolio website";
 
     function died($error) {
         // your error code can go here
@@ -72,15 +72,17 @@ if(isset($_POST['email'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
-
-    //$title = $_POST['title'];
-	$fName = $_POST['firstName']; //required
+    $fName = $_POST['firstName']; //required
 	$lName = $_POST['lastName'];  //required
 	$email = $_POST['email'];     //required
 	$phone = $_POST['phone'];
 	$comments = $_POST['questions']; //required
 	$contMethod = $_POST['contMethod']; //required
 
+	if(!isset($_POST['phone']) ||
+        ($contMethod = 'phone' | $contMethod = 'text')) {
+        died('Based on your preferred method of contact, please enter your phone number.');
+    }
 	switch ($contMethod) {
     case "phone":
         $method = "call you at $phone";
@@ -140,7 +142,7 @@ if(isset($_POST['email'])) {
 $headers = 'From: '.$email."\r\n".
 'Reply-To: '.$email."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email, $email_subject, $email_message, $headers);
+@mail($email_to, $email_subject, $email_message, $headers);
 
 
 //Print the received data:
