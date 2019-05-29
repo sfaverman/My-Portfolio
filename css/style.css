@@ -310,7 +310,7 @@ article.card:last-of-type {
   }
 .card img.snap {
 	width: 90%;
-	height: auto;
+    min-height: 1px;	height: auto;
 	/* height: 300px; - resize images to be same size */
 }
 /*.card img {
