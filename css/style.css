@@ -296,7 +296,7 @@ a.gitHub img {
 
 .card {
    width: 95%;
-   height: 100%;
+   height: 100vp;  /* updated for safari problem */
    color: #fff;
    font-size: 1em;
    margin: 0.5em auto;
@@ -311,31 +311,51 @@ a.gitHub img {
 .card:hover .card-content {
 	transform: rotateY(180deg);
 	transition: transform 2s;
+	-webkit-transform: rotateY(180deg);
+	-webkit-transition: transform 2s;
+	-o-transform: rotateY(180deg);
+	-o-transition: transform 2s;
+	-moz-transform: rotateY(180deg);
+	-moz-transition: transform 2s;
 }
 .card-content {
 	transition: transform 1s;
 	transform-style: preserve-3d;
+	-webkit-transition: transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-o-transition: transform 1s;
+	-o-transform-style: preserve-3d;
+	-moz-transition: transform 1s;
+	-moz-transform-style: preserve-3d;
 	width: 100%;
-	height: 100%;
+	height: 100vp;
 }
 .front, .back {
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
 	/*position: absolute;*/
 	width: 100%;
-	height: 100%;
+	height: 100vp;
 	margin: 0 5%;
 }
 
 .back {
 	/*background: url(../images/rrp2.png) no-repeat; */
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
 	margin-top: -104%;
 	margin-left: -5%;
 }
 
 /* end flip cards */
 
-
+/*article.card:nth-of-type(4) {
+    display: none;
+}*/
 article.card:last-of-type {
     margin-bottom: 60px;
   }
@@ -760,6 +780,9 @@ aside #slideNav {
 		   width: 45%;
 		   height: 60%;
 	}
+	/*article.card:nth-of-type(4) {
+    	display: flex;
+	}*/
 }
 
 @media screen and (min-width: 730px) {
