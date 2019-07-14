@@ -78,32 +78,6 @@
             }); // end 1-2-3 slideNav menu event handler
 
 	     }) // end doc ready
-
-		/* My ACCORDION */
-		/* $(document).ready(function() { */
-        $(function() {
-
-			//add + icon to all h3s
-			$(".accordion div").append('<i class="icon ion-md-arrow-dropdown"></i>');
-
-			$('.accordion div').click(function () {
-
-
-				//slide up all the content
-				$('.accordion article').slideUp();
-
-				$('.accordion div i').removeClass('ion-md-arrow-dropup ion-md-arrow-dropdown').addClass('ion-md-arrow-dropdown');
-
-				//slide down the content for h3 clicked - only if it's closed
-				if (!$(this).next().is(':visible')) {
-					$(this).next().slideDown();
-					  //toggle plus and minus icons
-					$(this).find('i').toggleClass('ion-md-arrow-dropdown ion-md-arrow-dropup');
-				    };
-
-			});
-
-        }); // end doc ready for Accordion
 	</script>
 </head>
 <body>
@@ -246,42 +220,12 @@
 
 			<section id="training" class="clearIt">
 				<h3> Recent Training - Cerificate Programs</h3>
-				<ul class="accordion">
-					<li>
-			    		<div><img src="../images/bullet.gif" alt="bullet icon"> FRONT END WEB DEVELOPMENT I   - SDCE Fall 2018</div>
-			    		<article>
-			    			<img src="../images/FEWD1_front.jpg" alt="FEWD two certificate front">
-			    			<img src="../images/FEWD1_back.png" alt="FEWD two certificate back">
-			    		</article>
-			    	</li>
-					<li>
-						<div><img src="../images/bullet.gif" alt=""> FRONT END WEB DEVELOPMENT II   - SDCE Spring 2019</div>
-						<article>
-			    			<img src="../images/FEWD2_front.jpg" alt="FEWD two certificate front">
-			    			<img src="../images/FEWD2_back.jpg" alt="FEWD two certificate back">
-			    		</article>
-					</li>
-					<li>
-						<div><img src="../images/bullet.gif" alt=""> MOBILE APPLICATION DEVELOPMENT - SDCE Spring 2018 </div>
-						<article>
-			    			<img src="../images/MAP_front.jpg" alt="FEWD two certificate front">
-			    			<img src="../images/MAP_back.png" alt="FEWD two certificate back">
-			    		</article>
-					</li>
-					<li>
-						<div><img src="../images/bullet.gif" alt=""> LINUX SERVER ADMINISTRATION - SDCE Spring 2018 </div>
-						<article>
-			    			<img src="../images/LINUX_front.jpg" alt="FEWD two certificate front">
-			    			<img src="../images/LINUX_back.png" alt="FEWD two certificate back">
-			    		</article>
-					</li>
-					<li>
-						<div><img src="../images/bullet.gif" alt=""> VIRTUAL DATACENTER - SDCE Summer 2018 </div>
-						<article>
-			    			<img src="../images/VDC_front.jpg" alt="FEWD two certificate front">
-			    			<img src="../images/VDC_back.png" alt="FEWD two certificate back">
-			    		</article>
-					</li>
+				<ul>
+					<li><img src="../images/bullet.gif" alt="bullet icon"> FRONT END WEB DEVELOPMENT I   - SDCE Fall 2018 </li>
+					<li><img src="../images/bullet.gif" alt=""> FRONT END WEB DEVELOPMENT II   - SDCE Spring 2019 </li>
+					<li><img src="../images/bullet.gif" alt=""> MOBILE APPLICATION DEVELOPMENT - SDCE Spring 2018 </li>
+					<li><img src="../images/bullet.gif" alt=""> LINUX SERVER ADMINISTRATION - SDCE Spring 2018 </li>
+					<li><img src="../images/bullet.gif" alt=""> VIRTUAL DATACENTER - SDCE Summer 2018 </li>
 				</ul>
 
 				<h3>Education</h3>
@@ -291,6 +235,7 @@
 					<li><img src="../images/bullet.gif" alt=""> INSTITUTE OF MANAGEMENT, Saint Petersburg, Russia - Advanced studies in Systems Programming, Software Design and development.</li>
 					<li><img src="../images/bullet.gif" alt=""> INSTITUTE OF MANAGEMENT, Vilnius, Lithuania - Certificate in Applications programming</li>
 				</ul>
+
 
            </section>
 			<section id="work">
