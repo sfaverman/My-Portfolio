@@ -840,6 +840,10 @@ ul.accordion {
 		   width: 45%;
 		   height: 60%;
 	}
+	#Gallery .card {
+		width: 90%;
+		height: 100%;
+	}
 	/*ul.accordion div {
 		padding: 0.5em;
 		font-size: 1.3em;
@@ -910,14 +914,19 @@ ul.accordion {
 		justify-content: space-around;
 		margin: auto;
 	}
-    #about .resBtnGrp, #resume .resBtnGrp {
+	#Gallery .resBtnGrp {
+		display: block;
+	}
+    #about .resBtnGrp, #resume .resBtnGrp, #portfolio .resBtnGrp{
 		margin-top: 5%;
         margin-bottom: 5%;
     }
 	.resBtnGrp a {
 		margin: auto;
 	}
-	#resume .resBtnGrp a {
+	#resume .resBtnGrp a,
+	#portfolio .resBtnGrp a
+	{
 		/*min-width: none;*/
 		font-size: .9em;
 	}
