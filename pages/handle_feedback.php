@@ -173,7 +173,7 @@ print "<h3> Thank you, $fName $lName, for your comments. </h3>
 </main>
 <footer>
 
-	<p>Copyright &copy; 2019</p>
+	<p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear())</script></p>
 	<a href="../index.html">Home</a> -
 	<a href="portfolio.html">Portfolio</a> -
 	<a href="about.html">About Me</a> -

@@ -21,19 +21,19 @@
 			$('.fifth').hide();
 			setTimeout(function() {
 				$('.first').fadeIn(500);
-			}, 1000);
+			}, 500);
 			setTimeout(function() {
 				$('.second').fadeIn(500);
-			}, 2000);
+			}, 1000);
 			setTimeout(function() {
 				$('.third').fadeIn(500);
-			}, 3000);
+			}, 1500);
 			setTimeout(function() {
 				$('.forth').fadeIn(500);
-			}, 5000);
+			}, 2500);
 			setTimeout(function() {
 				$('.fifth').fadeIn(500);
-			}, 6000);
+			}, 3500);
 
 		}) // end doc ready
     </script>
@@ -63,12 +63,16 @@
 
 <main id="home">
 	<section class="clearIt">
+		<h2 class="first hmAnim">Hello,</h1>
+		<h2 class="first hmAnim">My Name is</h2>
+		<h1 class="third hmAnim">Sofia Faverman</h2>
+		<h2 class="forth hmAnim">I am a Full Stack Web Developer</h2>
 
-		<h1 class="first hmAnim">Hello,</h1>
+		<!--<h2 class="first hmAnim">Hello,</h1>
 		<h2 class="second hmAnim">My Name is</h2>
-		<h2 class="third hmAnim">Sofia Faverman</h2>
-		<h2 class="forth hmAnim">I am a Front End Web Developer</h2>
-
+		<h1 class="third hmAnim">Sofia Faverman</h2>
+		<h2 class="forth hmAnim">I am a Full Stack Web Developer</h2>
+-->
 		<article class="fifth hmAnim resBtnGrp">
 			<a href="pages/about.html"><i class="icon ion-md-person"></i> More About Me!</a>
 			<!--<a href="https://github.com/sfaverman" target="_blank">
@@ -81,7 +85,7 @@
 </main>
 
 <footer>
-	<p>Copyright &copy; 2019</p>
+	<p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear())</script></p>
 	<a href="index.html" class="active">Home</a> -
 	<a href="pages/portfolio.html">Portfolio</a> -
 	<a href="pages/about.html">About Me</a> -

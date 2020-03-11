@@ -41,7 +41,7 @@ h1, h2 {
 	letter-spacing: 0.1em;
 	color: #c96b5f; /* burgundy */
     /* text-shadow: horiz. offset, vert. offset, blure, color */
-    text-shadow: 1px 1px 2px lightgoldenrodyellow, /* #fff,*/
+    text-shadow: 1px 1px 2px #e7e3d4, /*lightgoldenrodyellow,*/
                  2px 2px 3px #666,
                  3px 3px 5px #999;
 	background-color: rgba(255,255,255, 0.85);
@@ -123,7 +123,7 @@ a {
 }
 header {
 	height: 100px;
-	background-color: #5a636b; /* dark grey */
+	background-color: rgba(90, 99, 107, .7); /*rgba(128, 128, 136, .8); /*#808088; /*#98989c; dimgray; #808088;  #5a636b; /* dark grey */
 	position: relative;
 }
 
@@ -186,7 +186,7 @@ body {
 nav {
 	float: right;
 	width: 100%;
-	background-color:  #5a636b;
+	background-color: rgba(90, 99, 107, .7); /*#808088; /*dimgrey; /* #98989c  #5a636b; */
 }
 nav a:link {
     color: white;
@@ -195,31 +195,33 @@ nav a:link {
     font-weight: bold;
     padding: 4px 8px;
     display: block;
-    border: solid 1px blanchedalmond;
+    /*border: solid 1px blanchedalmond; */
 }
 nav a:visited {
-    color: white;
-    border: solid 1px blanchedalmond;
+    color: #fff; /*blanchedalmond; */
+    /*border: solid 1px blanchedalmond;*/
 }
 nav a:hover {
     background-color: rgba(201, 107, 95, .8); /* rgba(222,184,135,.8); burlywood;*/
     color: lightgoldenrodyellow;
-    border: solid 1px white;
+    /*border: solid 1px white;*/
 }
 nav a:active {
     color: lightgoldenrodyellow; /* #7b8f86;*/
-	background-color: #7b8f86;  /*lightgoldenrodyellow;*/
+	background-color: #98989c; /*#7b8f86;  /*lightgoldenrodyellow;*/
 }
 nav a:active i {
 	color: lightgoldenrodyellow; /*#7b8f86;*/
 }
 nav a.active {
-	color: dimgray;
+	color: dimgray; /*#808088;*/
 	background-color: floralwhite;
+/*
 	border: solid 1px lightgoldenrodyellow;
+*/
 }
 nav a.active i {
-	color: dimgray;
+	color: dimgray; /*#808088;*/
 }
 
 main {
@@ -229,7 +231,7 @@ main {
 }
 .callOut {
 	background-color: #7b8f86; /* rgba(143,188,143,.9); darkseagreen; */
-  	color: lightgoldenrodyellow;
+  	color: #e7e3d4; /*lightgoldenrodyellow; */
 	font-size: 1.4em;
 	margin-left: 4%;
 	padding: 3px 5px;
@@ -376,7 +378,7 @@ hr {
 }
 footer {
 	clear: both;
-	background-color: #7b8f86; /* rgba(143,188,143,.9);*/ /*darkseagreen; */
+	/*background-color: #7b8f86; */ /* rgba(143,188,143,.9); darkseagreen; */
 	text-align: center;
 	padding: 2% 0 3%;
 	margin-top: 2%;
@@ -411,6 +413,7 @@ footer a:hover {
 }
 #home h2 {
 	padding: 6px 0;
+	color: #e7e3d4;
 }
 .hmAnim {
 	display: none;
@@ -612,7 +615,7 @@ aside #slideNav {
 	font-size: 1em;
 	margin: 5%;
 	background-color: #c96b5f; /* burlywood -> cup orange */
-	color: lightgoldenrodyellow;
+	color: #fff; /*lightgoldenrodyellow; */
 }
 
 .artBtn a {
@@ -620,6 +623,9 @@ aside #slideNav {
 	min-width: 80px;
 	margin: 5%;
 	background-color: #c96b5f; /* burlywood -> cup orange */
+	color: #fff; /* lightgoldenrodyellow; */
+}
+.resBtnGrp a:hover, .artBtn a:hover {
 	color: lightgoldenrodyellow;
 }
 #home .resBtnGrp {
@@ -664,7 +670,8 @@ aside #slideNav {
     width: 100%;
     float: left;
 	margin-bottom: 10px;
-	background-color: none;
+	background: none;
+	/* background-color: none; */
 	outline: 0;
 }
 #contact input:focus, #contact textarea:focus {
@@ -874,6 +881,7 @@ ul.accordion {
 	nav {
 		float: right;
 		width: 88%;
+		background-color: rgba(90, 99, 107, 0);
 	}
 	nav.mainNav ul {
 		display: flex;
