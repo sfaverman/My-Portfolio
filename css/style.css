@@ -836,9 +836,13 @@ ul.accordion {
 #blog h3 {
 	text-align: center;
 }
-/*#blog .cart {
-	min-height: 80%;
-} */
+#blog div.card-content {
+	height: 550px;
+}
+#blog .card:hover .card-content {
+	transform: none;
+}
+
 
 /* Media Quiery */
 
