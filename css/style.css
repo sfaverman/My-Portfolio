@@ -56,7 +56,7 @@ h2 {
 #portfolio h2 {
 		margin-bottom: 10px;
 	}
-#about h3, #contact h3, #feedback h3 {
+#about h3, #contact h3, #feedback h3, #nf404 h3 {
 	font-size: 1.2em;
 	line-height: 1.4em;
 	letter-spacing: 0.01em;
@@ -69,13 +69,13 @@ h2 {
 	/*color: #e7e3d4;*/
 	background-color: rgba(255,255,255, 0.85);
 }
-#about ul.bullets {
+#about ul.bullets, #nf404 ul.bullets {
 	text-align: center;
 	background-color: rgba(255,255,255, 0.85);
 	width: 90%;
 	margin: auto;
 }
-#about ul.bullets li {
+#about ul.bullets li, #nf404 ul.bullets li {
 	width: 2%;
 	display: inline-block;
 	margin: 0 4px;
@@ -283,6 +283,14 @@ button {
 	min-width: 80px;
 	color: white;
 }
+.button a {
+	background-color: #c96b5f; /* burlywood -> cup orange */
+	margin: 5px;
+	padding: 5px;
+	min-width: 80px;
+	color: #fff;
+}
+
 
 a.gitHub img {
 	width: 7%;
@@ -598,7 +606,7 @@ aside #slideNav {
     margin-bottom: 0;
 }
 
-#portfolio .artBtn {
+#portfolio .artBtn, #blog .artBtn {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -810,6 +818,27 @@ ul.accordion {
 }*/
 
 /* Accodrion end */
+#blog p {
+	color: #000;
+	margin-right: 10px;
+	padding: 3px;
+
+	text-align: left;
+}
+#blog ol li {
+	color: #000;
+	margin: 0 10px;
+	padding: 3px;
+}
+#blog .card i {
+	margin-right:5px;
+}
+#blog h3 {
+	text-align: center;
+}
+/*#blog .cart {
+	min-height: 80%;
+} */
 
 /* Media Quiery */
 
@@ -925,7 +954,7 @@ ul.accordion {
 	#Gallery .resBtnGrp {
 		display: block;
 	}
-    #about .resBtnGrp, #resume .resBtnGrp, #portfolio .resBtnGrp{
+    #about .resBtnGrp, #resume .resBtnGrp, #portfolio .resBtnGrp, #blog .resBtnGrp {
 		margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -976,4 +1005,9 @@ ul.accordion {
 	/*ul.accordion {
 		width: 100%;
 	}*/
+}
+@media screen and (min-width: 1200px) {
+	nav.mainNav ul {
+		margin: -15px;
+	}
 }
