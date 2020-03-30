@@ -810,26 +810,21 @@ ul.accordion {
 	/*padding: 1em .5em .5em 1em;*/
 	padding: 0.5em 0 0 0.5em;
 }
-/*.accordion img {
-	transition: all .2s ease;
-}
-.accordion img:hover {
-	transform: scale(1.5);
-}*/
 
 /* Accodrion end */
 #blog p {
 	color: #000;
 	margin-right: 10px;
-	padding: 3px;
+	padding: 5px;
 
 	text-align: left;
 }
 #blog ol li {
 	color: #000;
 	margin: 0 10px;
-	padding: 3px;
+	padding: 2px 5px;
 }
+
 #blog .card i {
 	margin-right:5px;
 }
@@ -837,11 +832,13 @@ ul.accordion {
 	text-align: center;
 }
 #blog div.card-content {
-	height: 550px;
+	height: 500px;
+	font-size: .8em;
 }
 #blog .card:hover .card-content {
 	transform: none;
 }
+
 
 
 /* Media Quiery */
@@ -884,16 +881,18 @@ ul.accordion {
 		width: 90%;
 		height: 100%;
 	}
-	/*ul.accordion div {
-		padding: 0.5em;
-		font-size: 1.3em;
+	#blog div.card-content {
+		/*height: 500px;*/
+		font-size: .9em;
 	}
-	ul.accordion article {
-		font-size: 1.2em;
-	}*/
-	/*article.card:nth-of-type(4) {
-    	display: flex;
-	}*/
+	#blog .card {
+		width: 48%;
+		height: 600px;
+	}
+	#blog article {
+		padding: 5px;
+	}
+
 }
 
 @media screen and (min-width: 730px) {
@@ -933,6 +932,11 @@ ul.accordion {
 		   width: 30%;
 		   height: 40%;
 	}
+	#blog .card {
+		width: 30%;
+		height: 660px;
+	}
+
     article.card:last-of-type {
           margin-bottom: 20px;
     }
@@ -1002,13 +1006,21 @@ ul.accordion {
 		width: 100%;
 	}
 }
+@media screen and (min-width: 768px) {
+	#blog .card {
+		width: 30%;
+		height: 650px;
+	}
+
+}
 @media screen and (min-width: 850px) {
 	#skills {
 		font-size: 1.1em;
 	}
-	/*ul.accordion {
-		width: 100%;
-	}*/
+	#blog div.card-content {
+		height: 550px;
+		font-size: 1em;
+	}
 }
 @media screen and (min-width: 1200px) {
 	nav.mainNav ul {
