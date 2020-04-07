@@ -1052,6 +1052,20 @@ background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
 		width: 100%;
 	}
 }
+#resume h1 {
+	position: relative;
+	width: 100%;
+}
+#resume .prtBtn {
+	width: 15%;
+	position: absolute;
+	text-shadow: none;
+	top: 8px;
+	right: 0;
+	font-size: .5em;
+
+}
+
 @media screen and (min-width: 768px) {
 	#blog .card {
 		width: 30%;
