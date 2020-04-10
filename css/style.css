@@ -503,6 +503,12 @@ h2.hmAnim {
 #skills {
 	font-size: 0.8em;
 }
+#skills h4 {
+	font-size: 1.2em;
+	color:#7b8f86;
+	margin: 0 0 4px;
+	text-align: center;
+}
 
 /*#resWrap aside {
 	display: none;
