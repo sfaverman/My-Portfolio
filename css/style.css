@@ -386,7 +386,7 @@ hr {
 }
 footer {
 	clear: both;
-	background-color: #7b8f86;
+	/*background-color: #7b8f86;*/
 	text-align: center;
 	padding: 2% 0 3%;
 	margin-top: 2%;
@@ -891,7 +891,10 @@ background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
 #portfolio article.card p {
 	text-align: center;
 }
-
+/* remove host banner */
+div a img {
+    display: none;
+}
 
 /* Media Quiery */
 
