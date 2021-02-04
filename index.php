@@ -1,3 +1,11 @@
+<?php
+// Require https
+if ($_SERVER['HTTPS'] != "on") {
+    $url = "https://". $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+    header("Location: $url");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,9 +81,9 @@
 
 <main id="home">
 	<section class="clearIt">
-		<h2 class="first hmAnim">Hello,</h1>
+		<h2 class="first hmAnim">Hello,</h2>
 		<h2 class="first hmAnim">My Name is</h2>
-		<h1 class="third hmAnim">Sofia Faverman</h2>
+		<h1 class="third hmAnim">Sofia Faverman</h1>
 		<h2 class="forth hmAnim">I am a Full Stack Web Developer</h2>
 
 		<!--<h2 class="first hmAnim">Hello,</h1>
